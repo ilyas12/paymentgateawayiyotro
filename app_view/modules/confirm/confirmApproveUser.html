@@ -1,0 +1,32 @@
+<div class="modal-header">
+    <h3 class="modal-title" >Escalation</h3>
+</div>
+<div class="modal-body" stop-event="touchend">
+    <form class="form-horizontal" role="form" id="myForm" name="myForm">
+		<div class="form-body">
+
+			<div class="form-group"  ng-class="{ 'has-error' :  showAlert }">
+				<label class="col-md-3 control-label" >User</label>
+				<div class="col-md-6">
+							<ui-select uiSelectRequired name="user_id"
+								ng-model="data.user_id.selected" theme="bootstrap">
+								<ui-select-match placeholder="Select or search a user branch in the list...">
+									{{$select.selected.full_name}}
+								</ui-select-match>
+								<ui-select-choices repeat="item in user_selector | filter: $select.search">
+									<div ng-bind-html="item.full_name | highlight: $select.search"></div>
+								</ui-select-choices>
+							</ui-select>
+                      <p ng-show="showAlert" class="help-block">User is required.</p>
+				</div>
+			</div>
+
+
+			
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+    <button class="btn green" ng-click="ok()" >Ok</button>
+    <button class="btn btn-warning" ng-click="cancel()" >Close</button>
+</div>

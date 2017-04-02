@@ -1,0 +1,45 @@
+<div class="modal-header">
+    <h3 class="modal-title" >{{description}}</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" role="form" id="form" name="myForm">
+		<div class="form-body">
+
+			<!--input type="text" placeholder="Title" ng-model="data.thumbnail" class="form-control"-->
+			<div class="form-group">
+				<label class="col-md-3 control-label">Title</label>
+				<div class="col-md-6">
+					<input type="text" placeholder="Title" ng-model="data.title" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-3 control-label">Content</label>
+				<div class="col-md-6">
+					<textarea placeholder="Content" ng-model="data.content" class="form-control"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-3 control-label">Thumnail</label>
+				<div class="col-md-4" ng-hide="data.thumbnail">
+                        <input type="file" ngf-select ng-model="data.file" name="file"    
+                                         accept="*" ngf-max-size="4MB" required ng-change="upload(data.file)"
+                                         ngf-model-invalid="errorFile" > <br>
+	                   	<i style="color:red" ng-show="errorUpload">{{errorUpload}}</i>
+	                   	<i ng-show="myForm.file.$error.maxSize" style="color:red">File too large 
+                                      {{errorFile.size / 1000000|number:1}}MB: max 4M</i> 
+                </div>
+                <div class="col-md-3" ng-show="progress >= 0">
+                	<div class="progress">
+				        <div class="progress-bar progress-bar-primary" style="width:{{progress}}%" ng-bind="progress + '%'">60%</div>
+				    </div>
+				    <button ng-click="removeUpload()" ng-show="data.thumbnail" type="button" class="btn btn-xs btn-danger">Remove</button>
+                </div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+    <button class="btn green" ng-click="ok()" >Submit</button>
+    <button class="btn btn-warning" ng-click="cancel()" >Close</button>
+</div>

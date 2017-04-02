@@ -1,0 +1,90 @@
+  
+
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+
+       Payment Method
+
+    </div>
+
+    <div class="panel-body b-b b-light">
+
+      Search: <input id="filter" type="text" class="form-control input-sm w-auto inline m-r"/>
+
+    </div>
+
+    <div>
+
+      <table class="table m-b-none" ui-jp="footable" data-filter="#filter" data-page-size="5">
+
+        <thead>
+
+          <tr>
+
+              <th data-toggle="true">
+                  Name
+              </th>
+
+              <th data-toggle="true">
+                  Descritpion
+              </th>
+
+              <th>
+
+                  Action
+
+              </th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr ng-repeat="item in datas">
+
+              <td>{{item.name}}</td>
+              <td>{{item.description}}</td>
+
+              <td>
+
+                <button class="btn btn-info btn-xs" type="button" ng-click="edit_data('{{item.id}}')"><i class="fa fa-pencil"></i></button>
+
+                <button class="btn btn-danger btn-xs" type="button" ng-click="delete_data('{{item.id}}')"><i class="fa fa-minus"></i></button>
+
+              </td>
+
+          </tr>
+
+          
+
+        </tbody>
+
+        <tfoot class="hide-if-no-paging">
+
+          <tr>
+
+              <td colspan="5" class="text-center">
+
+                  <ul class="pagination"></ul>
+
+              </td>
+
+          </tr>
+
+        </tfoot>
+
+      </table>
+
+    </div>
+
+  </div>
+
+
+
+  <a href class="md-btn md-fab md-fab-bottom-right pos-fix teal" ng-click="open('lg')">
+
+    <i class="mdi-editor-mode-edit i-24"></i>
+
+  </a>

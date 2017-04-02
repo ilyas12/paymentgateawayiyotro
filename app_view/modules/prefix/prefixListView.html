@@ -1,0 +1,80 @@
+<div class="row">
+  
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;" >{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-body">
+              <ul class="breadcrumb">
+                  <li><a ui-sref="app.dashboard">Dashboard</a></li>
+                  <li class="active">{{description}}</li>
+              </ul>
+              
+              <div class="table-responsive">
+
+                <form class="form-inline">
+                  <div class="form-body">
+                    <div class="form-group pull-right">
+                      <span >Search</span> :<input id="filter" type="text" class="form-control input-sm w-auto inline m-r"/>
+                    </div>
+                  </div>
+                </form>
+                <table class="table m-b-none" ui-jp="footable" data-filter="#filter" data-page-size="5">
+                  <thead>
+                    <tr>
+                        <th data-toggle="true" >
+                            Prefix
+                        </th>
+                        <th >
+                            Description
+                        </th>
+                        <th >
+                            Running Number
+                        </th>
+                        <th >
+                            Length
+                        </th>
+                        <th >
+                            Action
+                        </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="item in datas">
+                        <td>{{item.prefix}}</td>
+                        <td>{{item.description}}</td>
+                        <td>{{item.running_number}}</td>
+                        <td>{{item.length}}</td>
+                        <td>
+                          <button class="btn btn-info btn-xs" type="button" ng-click="edit_data('{{item.id}}')"><i class="fa fa-pencil"></i></button>
+                          <!--<button class="btn btn-danger btn-xs" type="button" ng-click="delete_data('{{item.id}}')"><i class="fa fa-minus"></i></button>-->
+                        </td>
+                    </tr>
+                    
+                  </tbody>
+                  <tfoot class="hide-if-no-paging">
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <ul class="pagination"></ul>
+                        </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            
+        
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <a href class="md-btn md-fab md-fab-bottom-right pos-fix green" ng-click="add_data()" tooltip="add new">
+    <i class="mdi-action-note-add i-24"></i>
+  </a>

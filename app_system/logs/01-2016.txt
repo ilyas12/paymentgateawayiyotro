@@ -1,0 +1,30 @@
+::1 2 admin company 1 UPDATE `company` SET `name` = 'School', `email` = 'admin@arzap.com', `phone` = '12345', `address` = '203 Henderson road', `postal_code` = '12345', `fax` = '12345', `updated_at` = '2016-01-02 12:26:44', `updated_by` = '2'
+WHERE `id` = 1 update {"name":"School","email":"admin@arzap.com","phone":"12345","address":"203 Henderson road","postal_code":"12345","fax":"12345","user_id":"2"} admin update company 2016-01-02 12:26:44
+::1 2 admin department 1 UPDATE `department` SET `code` = 'IT', `description` = 'Information Technology', `manager_employee_id` = '1', `updated_at` = '2016-01-02 12:28:36', `updated_by` = '2'
+WHERE `id` = '1' update {"code":"IT","description":"Information Technology","manager_employee_id":"1","user_id":"2"} admin update department 2016-01-02 12:28:36
+::1 2 admin department 1 UPDATE `department` SET `deleted_at` = '2016-01-02 12:28:43', `deleted_by` = '2'
+WHERE `id` = '1' deactive {"id":"1","code":"IT","description":"Information Technology","manager_employee_id":"1","created_at":"2015-09-16 11:54:01","created_by":"1","updated_at":"2016-01-02 12:28:36","updated_by":"2","deleted_at":"2016-01-02 12:28:43","deleted_by":"2"} admin deactive department 2016-01-02 12:28:43
+::1 2 admin language_presentation 1 UPDATE `language_presentation` SET `template` = '[[DASHBOARD]]', `en` = 'Dashboard', `zh` = '???', `updated_at` = '2016-01-02 12:29:58', `updated_by` = '2'
+WHERE `id` = '1' update {"template":"[[DASHBOARD]]","en":"Dashboard","zh":"???","user_id":"2"} admin update language_presentation 2016-01-02 12:29:58
+::1 2 admin system_settings 1 UPDATE `system_settings` SET `payment_date_month` = 4, `updated_at` = '2016-01-02 12:36:54', `updated_by` = '2'
+WHERE `id` = '1' update {"payment_date_month":4,"user_id":"2"} admin update system_settings 2016-01-02 12:36:54
+::1 2 admin system_settings 1 UPDATE `system_settings` SET `payment_date_month` = 4, `updated_at` = '2016-01-02 12:37:24', `updated_by` = '2'
+WHERE `id` = '1' update {"payment_date_month":4,"user_id":"2"} admin update system_settings 2016-01-02 12:37:24
+::1 2 admin system_settings 1 UPDATE `system_settings` SET `payment_date_month` = NULL, `updated_at` = '2016-01-02 12:38:26', `updated_by` = '2'
+WHERE `id` = '1' update {"payment_date_month":null,"user_id":"2"} admin update system_settings 2016-01-02 12:38:26
+::1 2 admin system_settings 1 UPDATE `system_settings` SET `payment_date_month` = 4, `updated_at` = '2016-01-02 12:38:30', `updated_by` = '2'
+WHERE `id` = '1' update {"payment_date_month":4,"user_id":"2"} admin update system_settings 2016-01-02 12:38:30
+::1 2 admin user_group 1 UPDATE `user_group` SET `code` = 'Root Admin', `description` = 'root access only', `updated_at` = '2016-01-02 12:38:50', `updated_by` = '2'
+WHERE `id` = '1' update {"code":"Root Admin","description":"root access only","user_id":"2"} admin update user_group 2016-01-02 12:38:50
+::1 2 admin user_group 2 UPDATE `user_group` SET `deleted_at` = '2016-01-02 12:39:04', `deleted_by` = '2'
+WHERE `id` = '2' deactive {"id":"2","code":"Admin","description":null,"created_at":null,"updated_at":"2015-09-15 23:09:27","deleted_at":"2016-01-02 12:39:04","updated_by":"1","deleted_by":"2","created_by":null} admin deactive user_group 2016-01-02 12:39:04
+::1 2 admin user_access 1 UPDATE `user_access` SET `access_item_id` = 51, `user_access_group_id` = '1', `access_type` = 'full', `access_custom` = NULL, `updated_at` = '2016-01-02 12:41:15', `updated_by` = '2'
+WHERE `id` = '1' update {"access_item_id":51,"user_access_group_id":"1","access_type":"full","access_custom":null} admin update user_access 2016-01-02 12:41:15
+::1 2 admin user_access 2 UPDATE `user_access` SET `access_item_id` = 52, `user_access_group_id` = '1', `access_type` = 'full', `access_custom` = NULL, `updated_at` = '2016-01-02 12:41:15', `updated_by` = '2'
+WHERE `id` = '2' update {"access_item_id":52,"user_access_group_id":"1","access_type":"full","access_custom":null} admin update user_access 2016-01-02 12:41:15
+::1 2 admin user_access 3 UPDATE `user_access` SET `access_item_id` = 53, `user_access_group_id` = '1', `access_type` = 'full', `access_custom` = NULL, `updated_at` = '2016-01-02 12:41:15', `updated_by` = '2'
+WHERE `id` = '3' update {"access_item_id":53,"user_access_group_id":"1","access_type":"full","access_custom":null} admin update user_access 2016-01-02 12:41:15
+::1 2 admin user 1 UPDATE `user` SET `mobile` = '123456', `email` = 'root@arzapstudio.com', `department` = '1', `user_access_id` = '2', `updated_at` = '2016-01-02 12:50:05', `updated_by` = '2'
+WHERE `id` = '1' update {"mobile":"123456","email":"root@arzapstudio.com","department":"1","user_access_id":"2","user_id":"2"} admin update user 2016-01-02 12:50:05
+::1 2 admin user 2 UPDATE `user` SET `mobile` = '132456', `email` = 'admin@arzapstudio.com', `department` = '1', `user_access_id` = '2', `updated_at` = '2016-01-02 12:50:17', `updated_by` = '2'
+WHERE `id` = '2' update {"mobile":"132456","email":"admin@arzapstudio.com","department":"1","user_access_id":"2","user_id":"2"} admin update user 2016-01-02 12:50:17

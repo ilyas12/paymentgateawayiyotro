@@ -1,0 +1,91 @@
+<div class="row">
+  
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;" >{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-body">
+              <ul class="breadcrumb">
+                  <li><a ui-sref="app.dashboard">Dashboard</a></li>
+                  <li class="active">{{description}}</li>
+              </ul>
+              
+              <div class="table-responsive">
+
+                <form class="form-inline">
+                  <div class="form-body">
+                    <div class="form-group pull-right">
+                      <span >Search</span> : <input id="filter" type="text" class="form-control input-sm w-auto inline m-r" ng-model="search_text" placeholder="Search.." ng-model-options="{debounce: 750}" ng-change="search_data()"/>
+                    </div>
+                  </div>
+                </form>
+                <table class="table table-border table-striped m-b-none" >
+                  <thead>
+                    <tr>
+                        <th >Name
+                        </th>
+                        <th >Action
+                        </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="item in datas | filter : search">
+                        <td>{{item.name}}</td>
+                        <td>
+                          
+                          <button class="btn btn-info btn-xs" type="button" ng-click="edit_data('{{item.id}}')" tooltip="Edit"><i class="fa fa-pencil"></i></button>
+                          <button class="btn btn-danger btn-xs" type="button" ng-click="delete_data('{{item.id}}')" tooltip="Delete"><i class="fa fa-minus"></i></button>
+                          <button class="btn btn-warning btn-xs" type="button" ng-click="manage_link('{{item.id}}')" tooltip="Manage User Right"><i class="fa fa-link"></i></button>
+                        </td>
+                    </tr>
+                    
+                  </tbody>
+                  <tfoot >
+                    <tr>
+                        <td colspan="5" class="text-center">
+                              <paging
+                                    class="large"
+                                    page="1"
+                                    page-size="paging.page_size"
+                                    total="paging.total"
+                                    text-first="&laquo;"
+                                    text-last="&raquo;"
+                                    text-next="&rsaquo;"
+                                    text-prev="&lsaquo;"
+                                    text-title-page="Page Page hover title text"
+                                    text-title-first="First Page hover title text"
+                                    text-title-last="Last Page hover title text"
+                                    text-title-next="Next Page hover title text"
+                                    text-title-prev="Previous hover Page title text"
+                                    adjacent="2"
+                                    dots="..."
+                                    scroll-top="true"
+                                    hide-if-empty="true"
+                                    ul-class="pagination"
+                                    active-class="active"
+                                    disabled-class="disabled"
+                                    show-prev-next="true"
+                                    paging-action="DoCtrlPagingAct('Paging Clicked', page, pageSize, total)">
+                                </paging>
+                        </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            
+        
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+  <a href class="md-btn md-fab md-fab-bottom-right pos-fix green" ng-click="add_data()" tooltip="add new">
+    <i class="mdi-action-note-add i-24"></i>
+  </a>

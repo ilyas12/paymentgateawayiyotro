@@ -1,0 +1,95 @@
+<div class="row">
+  
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;" >{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-body">
+              <ul class="breadcrumb">
+                  <li><a ui-sref="app.dashboard">Dashboard</a></li>
+                  <li><a href="#/app/user">User</a></li>
+                  <li class="active">{{description}}</li>
+              </ul>
+              <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)" >{{alert.msg}}</alert>
+              <form class="form-horizontal" role="form" name="myForm">
+                <div class="form-body">           
+
+                  <div class="form-group " ng-class="{ 'has-error' : myForm.user_access_group_id.$invalid && showAlert }">
+                    <label class="col-sm-2 control-label" for="name">User Group</label>
+                    <div class=" col-sm-5">
+                      <select required class="form-control" required ng-options="item as item.text for item in user_group_selector track by item.id" data-ng-model="data.user_access_group_id" name="user_access_group_id" >
+                        <option value="" ></option>
+                      </select>
+                      <p ng-show="myForm.user_access_group_id.$invalid && showAlert" class="help-block">User Group is required.</p>
+                    </div>
+                  </div>
+                  <div ng-if="form_type=='add'" class="form-group " ng-class="{ 'has-error' : myForm.username.$invalid && showAlert }">
+                    <label class="col-sm-2 control-label" for="name">Username</label>
+                    <div class=" col-sm-5">
+                      <input type="text" placeholder="Your Name" name="username" ng-model="data.username" class="form-control" 
+                        required
+                        remote-validate="( base_system_url+'index.php/user/check_unique'+'{{data.id}}',['unique'] )"
+                      >
+                      <p ng-show="myForm.username.$error.required && showAlert" class="help-block">username is required.</p>
+                      <p ng-show="myForm.$error.remoteValidate && showAlert" class="help-block">Username Is not unique</p>
+                    </div>
+                  </div>
+                  <div ng-if="form_type=='add'" class="form-group " ng-class="{ 'has-error' : myForm.password.$invalid && showAlert }">
+                    <label class="col-sm-2 control-label" for="name">Password</label>
+                    <div class=" col-sm-5">
+                      <input type="password" placeholder="**** " name="password" ng-model="data.password" class="form-control" 
+                        required
+                      >
+                      <p ng-show="myForm.password.$invalid && showAlert" class="help-block">password is required.</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group" ng-class="{ 'has-error' : myForm.full_name.$invalid && showAlert }">
+                    <label class="col-sm-2 control-label" >Full Name</label>
+                    <div class=" col-sm-5">
+                      <input type="text" placeholder="Your Full Name" ng-model="data.full_name" class="form-control " name="postal_code">
+                    </div>
+                  </div>
+
+                  <div class="form-group" ng-class="{ 'has-error' : myForm.mobile.$invalid && showAlert }">
+                    <label class="col-sm-2 control-label" >Mobile</label>
+                    <div class=" col-sm-5">
+                      <input type="text" placeholder="Your  Mobile" ng-model="data.mobile" class="form-control " name="mobile">
+                    </div>
+                  </div>
+
+
+                  <div class="form-group" ng-class="{ 'has-error' : myForm.email.$invalid && showAlert }">
+                    <label class="col-sm-2 control-label" >Email</label>
+                    <div class="col-sm-5">
+                      <input type="email" placeholder="Your  Email" ng-model="data.email" class="form-control " name="email">
+                      <p ng-show="myForm.email.$error.email && showAlert" class="help-block">Invalid email.</p>
+                    </div>
+                  </div>
+
+
+                </div>
+        
+                <div class="form-actions">
+                  <div class="row">
+                    <div class="col-sm-offset-3 col-md-8 ">
+                      <button class="btn green" ng-click="formSubmit()" id="btnSubmit" >Submit</button>
+                      <button class="btn defult" ng-click="formCancel()" id="btnCancel" >Cancel</button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            
+        
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+{
+	
+	"load" : {
+
+		"page" : {
+
+			"[[DASHBOARD]]" 	: "Dashboard",
+			"[[PROJECT]]" 		: "Project",
+			"[[DEPARTMENT]]" 	: "Department",
+			"[[PRODUCT]]" 		: "Product",
+			"[[CUSTOMER]]"		: "Customer",
+			"[[SETTING]]"		: "Setting",
+			"[[PRODUCT_GROUP]]"	: "Product Group",
+			"[[PRODUCT_LIST]]"	: "Product List",
+			"[[CUSTOMER_GROUP]]": "Customer Group",
+			"[[CUSTOMER_LIST]]"	: "Customer List",
+			"[[PROJECT_CATEGORY]]" : "Project Category",
+			"[[PROJECT_LIST]]"	: "Project List",
+			"[[USER_GROUP]]"	: "User Group",
+			"[[USER_LIST]]"		: "User List",
+			"[[PAYMENT_TERMS]]"	: "Payment Terms",
+			"[[QUOTATION_LIST]]" : "Quotation List",
+			"[[INVOICE_LIST]]"	: "Invoice List",
+			"[[GROUP_NAME]]"	: "Group Name",
+			"[[FULL_NAME]]"		: "Full Name",
+			"[[PHONE]]"			: "Phone",
+			"[[EMAIL]]"			: "Email",
+			"[[NAME]]"			: "Name",
+			"[[ACTION]]"		: "Action",
+			"[[SEARCH]]"		: "Search",
+			"[[PROJECT_NAME]]"	: "Project Name",
+			"[[QUOTATION_NUMBER]]" : "Quotation Number",
+			"[[REMARKS]]"		: "Remarks",
+			"[[STATUS]]"		: "Status",
+			"[[OWNER]]"			: "Owner",
+			"[[DATE]]"			: "Date",
+			"[[PRODUCT_NAME]]"	: "Product Name",
+			"[[DESCRIPTION]]"	: "Description",
+			"[[LOW_QTY]]"		: "Low Qty",
+			"[[TYPE]]"			: "Type",
+			"[[DURATION]]"		: "Duration",
+			"[[INVOICE_NUMBER]]": "Invoice Number",
+			"[[GRAND_TOTAL]]"	: "Grand Total",
+			"[[CODE]]"			: "Code",
+			"[[QUICK_ACTION]]"	: "Quick Action",
+			"[[COMPANY_NAME]]"	: "Company Name",
+			"[[COMPANY]]"		: "Company",
+			"[[ADDRESS]]"		: "Address",
+			"[[USER]]"			: "User",
+			"[[OK]]"			: "Save",
+			"[[CLOSE]]"			: "Close",
+			"[[REGISTER_PAYMENT]]" : "Register Payment",
+			"[[TASK]]"			: "Task",
+			"[[QUOTATION]]"		: "Quotation",
+			"[[INVOICE]]"		: "Invoice",
+			"[[ADD]]"			: "Add",
+			"[[CUSTOMER]]"		: "Customer",
+			"[[QTY]]"			: "Qty",
+			"[[PRICE]]"			: "Price",
+			"[[TOTAL]]"				: "Total",
+			"[[PROJECT_MEETING]]"	: "Project Meeting",
+			"[[BALANCE]]"			: "Balance",
+			"[[CUSTOMER_INVOICE_NUMBER]]" : "Customer Invoice Number",
+			"[[PAYMENT_METHOD]]"	: "Payment Method",
+			"[[PAYMENT_REFERENCE]]"	: "Payment Reference",
+			"[[MEMO]]"				: "Memo",
+			"[[PROJECT_INFORMATION]]" : "Project Information",
+			"[[PRODUCT_DETAIL]]"	: "Product Detail",
+			"[[USER]]"				: "User",
+			"[[GROUP]]"				: "Group",
+			"[[CONTACT_PERSON]]"	: "Contact Person"
+
+
+
+		}
+
+	}
+
+}

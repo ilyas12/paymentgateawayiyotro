@@ -1,0 +1,46 @@
+<div class="modal-header">
+    <h3 class="modal-title">Change Password</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" role="form" id="form" name="myForm">
+	
+		<div class="form-body">
+			
+
+			<div class="form-group " ng-class="{ 'has-error' : myForm.username.$invalid && showAlert }">
+			  <label class="col-sm-3 control-label" for="name">Username</label>
+			  <div class=" col-sm-5">
+			    <input type="text" placeholder="Your Name" name="username" ng-model="data.username" class="form-control" 
+			      required readonly
+			    >
+			    <p ng-show="myForm.username.$invalid && showAlert" class="help-block">username is required.</p>
+			  </div>
+			</div>
+			<div class="form-group " ng-class="{ 'has-error' : myForm.password.$invalid && showAlert }">
+			  <label class="col-sm-3 control-label" for="name">New Password</label>
+			  <div class=" col-sm-5">
+			    <input type="password" placeholder="***" name="password" ng-model="data.password" class="form-control" 
+			      required
+			    >
+			    <p ng-show="myForm.password.$invalid && showAlert" class="help-block">password is required.</p>
+			  </div>
+			</div>
+			<div class="form-group " ng-class="{ 'has-error' : myForm.password_confirm.$invalid && showAlert }">
+			  <label class="col-sm-3 control-label" for="name">Confirm New Password</label>
+			  <div class=" col-sm-5">
+			    <input type="password" placeholder="***" name="password_confirm" ng-model="data.password_confirm" class="form-control" 
+			      required same-as="data.password"
+			    >
+			    <p ng-show="myForm.password_confirm.$invalid && showAlert" class="help-block">Confirm password should have the same value with password!.</p>
+			  </div>
+			</div>
+
+
+			
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+    <button class="btn green" ng-click="ok()" >Submit</button>
+    <button class="btn btn-warning" ng-click="cancel()" >Close</button>
+</div>

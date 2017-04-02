@@ -1,0 +1,534 @@
+2016-04-17 01:10:44;::1;0;Guest;company;1;UPDATE `company` SET `name` = 'company', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '12345', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 01:10:44', `updated_by` = 'Guest'
+WHERE `id` = 1;update;{"name":"company","address":"Jakarta","postal_code":"12345","phone":"12345","email":"admin@admin.com","fax":"6"};guest update company
+2016-04-17 01:11:02;::1;0;Guest;company;1;UPDATE `company` SET `name` = 'admin', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '12345', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 01:11:02', `updated_by` = 'Guest'
+WHERE `id` = 1;update;{"name":"admin","address":"Jakarta","postal_code":"12345","phone":"12345","email":"admin@admin.com","fax":"6"};guest update company
+2016-04-17 01:17:57;::1;0;Guest;company;1;UPDATE `company` SET `name` = 'admin', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 01:17:56', `updated_by` = 'Guest'
+WHERE `id` = 1;update;{"name":"admin","address":"Jakarta","postal_code":"12345","phone":"","email":"admin@admin.com","fax":"6"};guest update company
+2016-04-17 01:18:03;::1;0;Guest;company;1;UPDATE `company` SET `name` = 'admin', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '0897987', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 01:18:03', `updated_by` = 'Guest'
+WHERE `id` = 1;update;{"name":"admin","address":"Jakarta","postal_code":"12345","phone":"0897987","email":"admin@admin.com","fax":"6"};guest update company
+2016-04-17 02:46:43;::1;0;Guest;user;4;DELETE FROM `user`
+WHERE `id` = '4';restore;{"id":"4","username":"driver","password":"5752b9eb2786389fa4eea908e15c39c5","full_name":"driver","mobile":"12345","email":"test@driver.com","user_access_group_id":"3","user_group_id":null,"company_id":"2","outlet_id":"1","created_at":"2016-01-03 12:41:21","created_by":null,"updated_at":null,"updated_by":null,"deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 12:37:18;::1;0;Guest;User_access_group;3;UPDATE `User_access_group` SET `name` = 'super', `updated_at` = '2016-04-17 12:37:17', `updated_by` = 'Guest'
+WHERE `id` = '3';update;{"name":"super","user_id":"36"};guest update User_access_group
+2016-04-17 12:37:35;::1;0;Guest;User_access_group;2;DELETE FROM `User_access_group`
+WHERE `id` = '2';restore;{"id":"2","name":"Sales","access_right":"20,31","created_at":"2147483647","updated_by":null,"created_by":null,"deleted_by":null,"updated_at":"2015-10-22 11:08:13","deleted_at":null};guest restore User_access_group
+2016-04-17 12:39:46;::1;0;Guest;User_access_group;1;UPDATE `User_access_group` SET `access_right` = '2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 12:39:46', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"access_right":"2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};guest update User_access_group
+2016-04-17 12:39:54;::1;0;Guest;User_access_group;1;UPDATE `User_access_group` SET `access_right` = '2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 12:39:54', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"access_right":"2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};guest update User_access_group
+2016-04-17 13:20:13;::1;0;Guest;user;3;UPDATE `user` SET `username` = 'test1 5465', `full_name` = 'test 65465', `mobile` = '123 56546', `email` = 'test@test.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 13:20:13', `updated_by` = 'Guest'
+WHERE `id` = '3';update;{"username":"test1 5465","full_name":"test 65465","mobile":"123 56546","email":"test@test.com","user_access_group_id":"3"};guest update user
+2016-04-17 13:21:48;::1;0;Guest;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = '09890', `email` = 'admin@admin.com', `user_access_group_id` = '1', `updated_at` = '2016-04-17 13:21:47', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":"09890","email":"admin@admin.com","user_access_group_id":"1"};guest update user
+2016-04-17 13:23:51;::1;0;Guest;user;2;UPDATE `user` SET `username` = 'Ilyas', `full_name` = 'ilyas raswandhi', `mobile` = '9283567', `email` = 'ilyas@gmail.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 13:23:51', `updated_by` = 'Guest'
+WHERE `id` = '2';update;{"username":"Ilyas","full_name":"ilyas raswandhi","mobile":"9283567","email":"ilyas@gmail.com","user_access_group_id":"3"};guest update user
+2016-04-17 13:24:02;::1;0;Guest;user;4;DELETE FROM `user`
+WHERE `id` = '4';restore;{"id":"4","username":"damin","password":"f3ef258757994c916d2d93fa71b89c41","full_name":"damin","mobile":"09809","email":"admin@admin.com","user_access_group_id":"1","user_group_id":null,"company_id":"","outlet_id":"0","created_at":"2016-04-17 13:20:30","created_by":"0","updated_at":"2016-04-17 13:20:30","updated_by":"0","deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 13:24:49;::1;0;Guest;user;3;UPDATE `user` SET `username` = 'test1 5465', `full_name` = 'test 65465', `mobile` = '123 56546', `email` = 'test@test.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 13:24:49', `updated_by` = 'Guest'
+WHERE `id` = '3';update;{"username":"test1 5465","full_name":"test 65465","mobile":"123 56546","email":"test@test.com","user_access_group_id":"3"};guest update user
+2016-04-17 13:25:55;::1;0;Guest;user;3;UPDATE `user` SET `username` = 'test1 5465', `full_name` = 'test 65465', `mobile` = '123 56546', `email` = 'test@test.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 13:25:55', `updated_by` = 'Guest'
+WHERE `id` = '3';update;{"username":"test1 5465","full_name":"test 65465","mobile":"123 56546","email":"test@test.com","user_access_group_id":"3"};guest update user
+2016-04-17 13:30:39;::1;0;Guest;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = '09890', `email` = 'admin@admin.com', `user_access_group_id` = '1', `updated_at` = '2016-04-17 13:30:39', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":"09890","email":"admin@admin.com","user_access_group_id":"1"};guest update user
+2016-04-17 13:39:27;::1;0;Guest;user;3;DELETE FROM `user`
+WHERE `id` = '3';restore;{"id":"3","username":"test1 5465","password":"42b72f913c3201fc62660d512f5ac746","full_name":"test 65465","mobile":"123 56546","email":"test@test.com","user_access_group_id":"3","user_group_id":null,"company_id":"1","outlet_id":"1","created_at":"2015-11-02 23:13:27","created_by":null,"updated_at":"2016-04-17 13:25:55","updated_by":"0","deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 13:43:40;::1;0;Guest;user;2;DELETE FROM `user`
+WHERE `id` = '2';restore;{"id":"2","username":"Ilyas","password":"e7424612b2b9ab94776bc127603bac95","full_name":"ilyas raswandhi","mobile":"9283567","email":"ilyas@gmail.com","user_access_group_id":"3","user_group_id":null,"company_id":"1","outlet_id":"1","created_at":"2015-10-22 13:21:37","created_by":null,"updated_at":"2016-04-17 13:23:51","updated_by":"0","deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 14:32:20;::1;0;Guest;user;6;UPDATE `user` SET `username` = 'jkhkjh', `full_name` = 'sadsad', `mobile` = 'jhkj', `email` = 'admin@admin.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 14:32:20', `updated_by` = 'Guest'
+WHERE `id` = '6';update;{"username":"jkhkjh","full_name":"sadsad","mobile":"jhkj","email":"admin@admin.com","user_access_group_id":"3"};guest update user
+2016-04-17 14:33:55;::1;0;Guest;user;7;DELETE FROM `user`
+WHERE `id` = '7';restore;{"id":"7","username":"jhk","password":"40de647a09fe4d3e1bd0350fc2b8e80e","full_name":"jkhkj","mobile":"hkjhk","email":"admin@admin.com","user_access_group_id":"1","user_group_id":null,"company_id":"","outlet_id":"0","created_at":"2016-04-17 14:30:00","created_by":"0","updated_at":"2016-04-17 14:30:00","updated_by":"0","deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 14:36:03;::1;0;Guest;user;8;DELETE FROM `user`
+WHERE `id` = '8';restore;{"id":"8","username":"jhk","password":"40de647a09fe4d3e1bd0350fc2b8e80e","full_name":"jkhkj","mobile":"hkjhk","email":"admin@admin.com","user_access_group_id":"1","user_group_id":null,"company_id":"","outlet_id":"0","created_at":"2016-04-17 14:30:58","created_by":"0","updated_at":"2016-04-17 14:30:58","updated_by":"0","deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 14:36:11;::1;0;Guest;user;;UPDATE `user` SET `password` = 'd41d8cd98f00b204e9800998ecf8427e', `updated_at` = '2016-04-17 14:36:11', `updated_by` = 'Guest'
+WHERE `id` IS NULL;update;{"password":"d41d8cd98f00b204e9800998ecf8427e"};guest update user
+2016-04-17 14:36:26;::1;0;Guest;user;;UPDATE `user` SET `password` = 'd41d8cd98f00b204e9800998ecf8427e', `updated_at` = '2016-04-17 14:36:26', `updated_by` = 'Guest'
+WHERE `id` IS NULL;update;{"password":"d41d8cd98f00b204e9800998ecf8427e"};guest update user
+2016-04-17 14:38:36;::1;0;Guest;user;1;UPDATE `user` SET `password` = 'f6fdffe48c908deb0f4c3bd36c032e72', `updated_at` = '2016-04-17 14:38:36', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"password":"f6fdffe48c908deb0f4c3bd36c032e72"};guest update user
+2016-04-17 14:38:50;::1;0;Guest;user;5;UPDATE `user` SET `password` = '3742dd165e6c5fd0022e26f313c75e8a', `updated_at` = '2016-04-17 14:38:50', `updated_by` = 'Guest'
+WHERE `id` = '5';update;{"password":"3742dd165e6c5fd0022e26f313c75e8a"};guest update user
+2016-04-17 14:39:00;::1;0;Guest;user;5;UPDATE `user` SET `password` = '6ca5abe49934541d79db8a907619a395', `updated_at` = '2016-04-17 14:39:00', `updated_by` = 'Guest'
+WHERE `id` = '5';update;{"password":"6ca5abe49934541d79db8a907619a395"};guest update user
+2016-04-17 14:39:18;::1;0;Guest;user;6;UPDATE `user` SET `password` = '59db22a42bd213f280b1fb472f0e7406', `updated_at` = '2016-04-17 14:39:18', `updated_by` = 'Guest'
+WHERE `id` = '6';update;{"password":"59db22a42bd213f280b1fb472f0e7406"};guest update user
+2016-04-17 14:39:30;::1;0;Guest;user;5;DELETE FROM `user`
+WHERE `id` = '5';restore;{"id":"5","username":"jkhkjh","password":"6ca5abe49934541d79db8a907619a395","full_name":"admin","mobile":"admin","email":"admin@admin.com","user_access_group_id":"3","user_group_id":null,"company_id":"","outlet_id":"0","created_at":"2016-04-17 14:25:16","created_by":"0","updated_at":"2016-04-17 14:39:00","updated_by":"0","deleted_at":null,"deleted_by":null};guest restore user
+2016-04-17 14:39:47;::1;0;Guest;user;9;UPDATE `user` SET `username` = 'test1 5465', `full_name` = 'test 65465', `mobile` = '0897987', `email` = 'admin@admin.com', `user_access_group_id` = '1', `updated_at` = '2016-04-17 14:39:47', `updated_by` = 'Guest'
+WHERE `id` = '9';update;{"username":"test1 5465","full_name":"test 65465","mobile":"0897987","email":"admin@admin.com","user_access_group_id":"1"};guest update user
+2016-04-17 14:41:50;::1;0;Guest;User_access_group;1;UPDATE `User_access_group` SET `name` = 'Admin', `updated_at` = '2016-04-17 14:41:50', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"name":"Admin","user_id":"36"};guest update User_access_group
+2016-04-17 14:46:51;::1;0;Guest;user;1;UPDATE `user` SET `password` = 'f6fdffe48c908deb0f4c3bd36c032e72', `updated_at` = '2016-04-17 14:46:51', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"password":"f6fdffe48c908deb0f4c3bd36c032e72"};guest update user
+2016-04-17 14:47:06;::1;0;Guest;user;6;UPDATE `user` SET `password` = '59db22a42bd213f280b1fb472f0e7406', `updated_at` = '2016-04-17 14:47:06', `updated_by` = 'Guest'
+WHERE `id` = '6';update;{"password":"59db22a42bd213f280b1fb472f0e7406"};guest update user
+2016-04-17 14:47:25;::1;0;Guest;user;6;UPDATE `user` SET `password` = '6d20db70ac4077d99541f46e4b13df34', `updated_at` = '2016-04-17 14:47:25', `updated_by` = 'Guest'
+WHERE `id` = '6';update;{"password":"6d20db70ac4077d99541f46e4b13df34"};guest update user
+2016-04-17 14:47:36;::1;0;Guest;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = '09890', `email` = 'admin@admin.com', `user_access_group_id` = '1', `updated_at` = '2016-04-17 14:47:36', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":"09890","email":"admin@admin.com","user_access_group_id":"1"};guest update user
+2016-04-17 15:18:32;::1;0;Guest;user;6;UPDATE `user` SET `username` = 'jhhjk', `full_name` = 'sadsad', `mobile` = 'jhkj', `email` = 'admin@admin.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 15:18:32', `updated_by` = 'Guest'
+WHERE `id` = '6';update;{"username":"jhhjk","full_name":"sadsad","mobile":"jhkj","email":"admin@admin.com","user_access_group_id":"3"};guest update user
+2016-04-17 15:18:37;::1;0;Guest;user;6;UPDATE `user` SET `username` = 'jhhjk', `full_name` = 'sadsad', `mobile` = 'jhkj', `email` = 'admin@admin.com', `user_access_group_id` = '3', `updated_at` = '2016-04-17 15:18:37', `updated_by` = 'Guest'
+WHERE `id` = '6';update;{"username":"jhhjk","full_name":"sadsad","mobile":"jhkj","email":"admin@admin.com","user_access_group_id":"3"};guest update user
+2016-04-17 15:24:40;::1;0;Guest;user;1;UPDATE `user` SET `password` = 'f6fdffe48c908deb0f4c3bd36c032e72', `updated_at` = '2016-04-17 15:24:40', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"password":"f6fdffe48c908deb0f4c3bd36c032e72"};guest update user
+2016-04-17 15:31:41;::1;0;Guest;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = '09890', `email` = 'admin@admin.com', `user_access_group_id` = '1', `updated_at` = '2016-04-17 15:31:41', `updated_by` = 'Guest'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":"09890","email":"admin@admin.com","user_access_group_id":"1"};guest update user
+2016-04-17 15:35:17;::1;1;admin;User_access_group;1;UPDATE `User_access_group` SET `name` = 'Admin', `updated_at` = '2016-04-17 15:35:17', `updated_by` = 'admin'
+WHERE `id` = '1';update;{"name":"Admin","user_id":"1"};admin update User_access_group
+2016-04-17 15:35:21;::1;1;admin;User_access_group;3;UPDATE `User_access_group` SET `name` = 'super', `updated_at` = '2016-04-17 15:35:21', `updated_by` = 'admin'
+WHERE `id` = '3';update;{"name":"super","user_id":"1"};admin update User_access_group
+2016-04-17 16:16:39;::1;1;admin;company;1;UPDATE `company` SET `name` = 'admin', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '0897987', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 16:16:38', `updated_by` = 'admin'
+WHERE `id` = 1;update;{"name":"admin","address":"Jakarta","postal_code":"12345","phone":"0897987","email":"admin@admin.com","fax":"6"};admin update company
+2016-04-17 16:16:43;::1;1;admin;company;1;UPDATE `company` SET `name` = 'admin 1', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '0897987', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 16:16:43', `updated_by` = 'admin'
+WHERE `id` = 1;update;{"name":"admin 1","address":"Jakarta","postal_code":"12345","phone":"0897987","email":"admin@admin.com","fax":"6"};admin update company
+2016-04-17 16:16:53;::1;1;admin;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = '09890', `email` = 'admin@admin.com', `user_access_group_id` = '1', `updated_at` = '2016-04-17 16:16:53', `updated_by` = 'admin'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":"09890","email":"admin@admin.com","user_access_group_id":"1","user_id":"1"};admin update user
+2016-04-17 16:17:02;::1;1;admin;user;6;DELETE FROM `user`
+WHERE `id` = '6';restore;{"id":"6","username":"jhhjk","password":"6d20db70ac4077d99541f46e4b13df34","full_name":"sadsad","mobile":"jhkj","email":"admin@admin.com","user_access_group_id":"3","user_group_id":null,"company_id":"","outlet_id":"0","created_at":"2016-04-17 14:27:30","created_by":"0","updated_at":"2016-04-17 15:18:37","updated_by":"0","deleted_at":null,"deleted_by":null};admin restore user
+2016-04-17 16:17:11;::1;1;admin;user;9;UPDATE `user` SET `password` = '6fc83d63b0ee671af0a73845acbaba87', `updated_at` = '2016-04-17 16:17:11', `updated_by` = 'admin'
+WHERE `id` = '9';update;{"password":"6fc83d63b0ee671af0a73845acbaba87"};admin update user
+2016-04-17 16:17:24;::1;1;admin;User_access_group;1;UPDATE `User_access_group` SET `access_right` = '3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 16:17:24', `updated_by` = 'admin'
+WHERE `id` = '1';update;{"access_right":"3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};admin update User_access_group
+2016-04-17 16:19:15;::1;1;admin;User_access_group;1;UPDATE `User_access_group` SET `access_right` = '3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6,2', `updated_at` = '2016-04-17 16:19:15', `updated_by` = 'admin'
+WHERE `id` = '1';update;{"access_right":"3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6,2"};admin update User_access_group
+2016-04-17 16:19:22;::1;1;admin;User_access_group;1;UPDATE `User_access_group` SET `access_right` = '3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 16:19:22', `updated_by` = 'admin'
+WHERE `id` = '1';update;{"access_right":"3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};admin update User_access_group
+2016-04-17 16:19:27;::1;1;admin;User_access_group;1;UPDATE `User_access_group` SET `access_right` = '3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6,2', `updated_at` = '2016-04-17 16:19:27', `updated_by` = 'admin'
+WHERE `id` = '1';update;{"access_right":"3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6,2"};admin update User_access_group
+2016-04-17 16:29:48;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 16:29:48', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};admin update user_access_group
+2016-04-17 16:29:55;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 16:29:55', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"2,3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};admin update user_access_group
+2016-04-17 16:30:36;::1;1;1;company;1;UPDATE `company` SET `name` = 'Paymanet', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '12345', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 16:30:36', `updated_by` = '1'
+WHERE `id` = 1;update;{"name":"Paymanet","address":"Jakarta","postal_code":"12345","phone":"12345","email":"admin@admin.com","fax":"6","user_id":"1"};admin update company
+2016-04-17 16:38:33;::1;1;1;company;1;UPDATE `company` SET `name` = 'Paymanet', `address` = 'Jakarta', `postal_code` = '12345', `phone` = '12345', `email` = 'admin@admin.com', `fax` = '6', `updated_at` = '2016-04-17 16:38:33', `updated_by` = '1'
+WHERE `id` = 1;update;{"name":"Paymanet","address":"Jakarta","postal_code":"12345","phone":"12345","email":"admin@admin.com","fax":"6","user_id":"1"};admin update company
+2016-04-17 16:38:48;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6', `updated_at` = '2016-04-17 16:38:48', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"3,4,5,8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6"};admin update user_access_group
+2016-04-17 16:39:05;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6,2,3,4,5', `updated_at` = '2016-04-17 16:39:05', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,9,44,6,2,3,4,5"};admin update user_access_group
+2016-04-18 15:54:11;::1;1;1;master_bank;134;UPDATE `master_bank` SET `name` = 'Bank BCA Syariah', `updated_at` = '2016-04-18 15:54:11', `updated_by` = '1'
+WHERE `id` = '134';update;{"name":"Bank BCA Syariah","user_id":"1"};admin update master_bank
+2016-04-19 22:08:10;::1;1;1;prefix;1;UPDATE `prefix` SET `prefix` = 'TOP-UP', `length` = '5', `updated_at` = '2016-04-19 22:08:10', `updated_by` = '1'
+WHERE `id` = '1';update;{"prefix":"TOP-UP","length":"5","user_id":"1"};admin update prefix
+2016-04-19 22:08:16;::1;1;1;prefix;1;UPDATE `prefix` SET `prefix` = 'TOP-UP', `length` = '4', `updated_at` = '2016-04-19 22:08:16', `updated_by` = '1'
+WHERE `id` = '1';update;{"prefix":"TOP-UP","length":"4","user_id":"1"};admin update prefix
+2016-04-19 22:17:14;::1;1;1;prefix;1;UPDATE `prefix` SET `prefix` = 'TOP-UP', `length` = '4', `updated_at` = '2016-04-19 22:17:14', `updated_by` = '1'
+WHERE `id` = '1';update;{"prefix":"TOP-UP","length":"4","user_id":"1"};admin update prefix
+2016-04-19 23:25:45;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1180000, `updated_at` = '2016-04-19 23:25:45', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1180000};admin update users
+2016-04-19 23:25:45;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:25:45', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:26:22;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1200000, `updated_at` = '2016-04-19 23:26:22', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1200000};admin update users
+2016-04-19 23:26:22;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:26:22', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:26:23;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1220000, `updated_at` = '2016-04-19 23:26:23', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1220000};admin update users
+2016-04-19 23:26:23;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:26:23', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:26:23;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1240000, `updated_at` = '2016-04-19 23:26:23', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1240000};admin update users
+2016-04-19 23:26:23;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:26:23', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:27:23;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:27:23', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:27:24;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:27:24', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:27:24;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:27:24', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:27:47;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:27:47', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:27:48;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:27:48', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:28:18;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:28:18', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:28:19;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:28:19', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:28:36;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:28:36', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:28:46;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:28:46', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:28:47;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:28:47', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:28:47;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:28:47', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:08;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:08', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:08;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:08', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:09;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:09', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:23;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 'asdsad', `updated_at` = '2016-04-19 23:29:23', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":"asdsad"};admin update topup_request
+2016-04-19 23:29:31;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:31', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:32;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:32', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:53;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:53', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:54;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:54', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:29:54;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:29:54', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:30:46;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:30:46', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:30:56;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1260000, `updated_at` = '2016-04-19 23:30:56', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1260000};admin update users
+2016-04-19 23:30:56;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:30:56', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:30:58;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1280000, `updated_at` = '2016-04-19 23:30:58', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1280000};admin update users
+2016-04-19 23:30:58;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:30:58', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:30:59;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:30:59', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:31:14;::1;1;1;topup_request;;UPDATE `topup_request` SET `bank_id_from` = 3, `updated_at` = '2016-04-19 23:31:14', `updated_by` = '1'
+WHERE `id` = '';update;{"bank_id_from":3};admin update topup_request
+2016-04-19 23:31:15;::1;1;1;topup_request;;UPDATE `topup_request` SET `bank_id_from` = 3, `updated_at` = '2016-04-19 23:31:15', `updated_by` = '1'
+WHERE `id` = '';update;{"bank_id_from":3};admin update topup_request
+2016-04-19 23:31:15;::1;1;1;topup_request;;UPDATE `topup_request` SET `bank_id_from` = 3, `updated_at` = '2016-04-19 23:31:15', `updated_by` = '1'
+WHERE `id` = '';update;{"bank_id_from":3};admin update topup_request
+2016-04-19 23:31:42;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1300000, `updated_at` = '2016-04-19 23:31:42', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1300000};admin update users
+2016-04-19 23:31:42;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:31:42', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:31:51;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1320000, `updated_at` = '2016-04-19 23:31:51', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1320000};admin update users
+2016-04-19 23:31:51;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:31:51', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:02;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1340000, `updated_at` = '2016-04-19 23:32:02', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1340000};admin update users
+2016-04-19 23:32:02;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:02', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:03;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1360000, `updated_at` = '2016-04-19 23:32:03', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1360000};admin update users
+2016-04-19 23:32:03;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:03', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:04;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1380000, `updated_at` = '2016-04-19 23:32:04', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1380000};admin update users
+2016-04-19 23:32:04;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:04', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:04;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1400000, `updated_at` = '2016-04-19 23:32:04', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1400000};admin update users
+2016-04-19 23:32:04;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:04', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:05;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1420000, `updated_at` = '2016-04-19 23:32:05', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1420000};admin update users
+2016-04-19 23:32:05;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:05', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:06;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1440000, `updated_at` = '2016-04-19 23:32:06', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1440000};admin update users
+2016-04-19 23:32:06;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:06', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:06;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1460000, `updated_at` = '2016-04-19 23:32:06', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1460000};admin update users
+2016-04-19 23:32:06;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:06', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:07;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1480000, `updated_at` = '2016-04-19 23:32:07', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1480000};admin update users
+2016-04-19 23:32:07;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:07', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:08;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1500000, `updated_at` = '2016-04-19 23:32:08', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1500000};admin update users
+2016-04-19 23:32:08;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:08', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:32:23;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1520000, `updated_at` = '2016-04-19 23:32:23', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1520000};admin update users
+2016-04-19 23:32:23;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:32:23', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:33:27;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1540000, `updated_at` = '2016-04-19 23:33:27', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1540000};admin update users
+2016-04-19 23:33:27;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 10, `updated_at` = '2016-04-19 23:33:27', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":10};admin update topup_request
+2016-04-19 23:33:27;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1560000, `updated_at` = '2016-04-19 23:33:27', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1560000};admin update users
+2016-04-19 23:33:27;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 10, `updated_at` = '2016-04-19 23:33:27', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":10};admin update topup_request
+2016-04-19 23:33:28;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1580000, `updated_at` = '2016-04-19 23:33:28', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1580000};admin update users
+2016-04-19 23:33:28;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 10, `updated_at` = '2016-04-19 23:33:28', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":10};admin update topup_request
+2016-04-19 23:33:44;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1600000, `updated_at` = '2016-04-19 23:33:44', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1600000};admin update users
+2016-04-19 23:33:44;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 2, `updated_at` = '2016-04-19 23:33:44', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":2};admin update topup_request
+2016-04-19 23:33:59;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1620000, `updated_at` = '2016-04-19 23:33:59', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1620000};admin update users
+2016-04-19 23:33:59;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 2, `updated_at` = '2016-04-19 23:33:59', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":2};admin update topup_request
+2016-04-19 23:34:00;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1640000, `updated_at` = '2016-04-19 23:34:00', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1640000};admin update users
+2016-04-19 23:34:00;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 2, `updated_at` = '2016-04-19 23:34:00', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":2};admin update topup_request
+2016-04-19 23:34:01;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1660000, `updated_at` = '2016-04-19 23:34:01', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1660000};admin update users
+2016-04-19 23:34:01;::1;1;1;topup_request;8;UPDATE `topup_request` SET `bank_id_from` = 2, `updated_at` = '2016-04-19 23:34:01', `updated_by` = '1'
+WHERE `id` = '8';update;{"bank_id_from":2};admin update topup_request
+2016-04-19 23:34:10;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1680000, `updated_at` = '2016-04-19 23:34:10', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1680000};admin update users
+2016-04-19 23:34:11;::1;1;1;topup_request;8;UPDATE `topup_request` SET `updated_at` = '2016-04-19 23:34:10', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:34:12;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1700000, `updated_at` = '2016-04-19 23:34:12', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1700000};admin update users
+2016-04-19 23:34:12;::1;1;1;topup_request;8;UPDATE `topup_request` SET `updated_at` = '2016-04-19 23:34:12', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:34:44;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1720000, `updated_at` = '2016-04-19 23:34:44', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1720000};admin update users
+2016-04-19 23:34:44;::1;1;1;topup_request;8;UPDATE `topup_request` SET `updated_at` = '2016-04-19 23:34:44', `updated_by` = '1'
+WHERE `id` = '8';update;{"dasdsa":2};admin update topup_request
+2016-04-19 23:35:15;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1740000, `updated_at` = '2016-04-19 23:35:15', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1740000};admin update users
+2016-04-19 23:35:15;::1;1;1;topup_request;8;UPDATE `topup_request` SET `updated_at` = '2016-04-19 23:35:15', `updated_by` = '1'
+WHERE `id` = '8';update;{"dasdsa":2};admin update topup_request
+2016-04-19 23:35:29;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1760000, `updated_at` = '2016-04-19 23:35:29', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1760000};admin update users
+2016-04-19 23:35:29;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:35:29', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:35:40;::1;1;1;topup_request;;UPDATE `topup_request` SET `bank_id_from` = 3, `updated_at` = '2016-04-19 23:35:40', `updated_by` = '1'
+WHERE `id` = '';update;{"bank_id_from":3};admin update topup_request
+2016-04-19 23:36:00;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:36:00', `updated_by` = '1'
+WHERE `id` = '';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:36:28;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:36:28', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:36:29;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:36:28', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:36:30;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1780000, `updated_at` = '2016-04-19 23:36:30', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1780000};admin update users
+2016-04-19 23:36:30;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:36:30', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:36:40;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:36:40', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:36:59;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:36:58', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:37:07;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1880000, `updated_at` = '2016-04-19 23:37:07', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1880000};admin update users
+2016-04-19 23:37:07;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:37:07', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:37:10;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1900000, `updated_at` = '2016-04-19 23:37:10', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1900000};admin update users
+2016-04-19 23:37:10;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:37:10', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:37:33;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2000000, `updated_at` = '2016-04-19 23:37:33', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2000000};admin update users
+2016-04-19 23:37:33;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:37:33', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:37:38;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:37:38', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:37:41;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2020000, `updated_at` = '2016-04-19 23:37:41', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2020000};admin update users
+2016-04-19 23:37:41;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:37:41', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:39:20;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2120000, `updated_at` = '2016-04-19 23:39:20', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2120000};admin update users
+2016-04-19 23:39:20;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:39:20', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:39:24;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-19 23:39:24', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":3};admin update topup_request
+2016-04-19 23:39:28;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2140000, `updated_at` = '2016-04-19 23:39:28', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2140000};admin update users
+2016-04-19 23:39:29;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:39:28', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:47:12;::1;1;1;topup_request;;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-19 23:47:12', `updated_by` = '1'
+WHERE `id` IS NULL;update;{"id_request_status":4};admin update topup_request
+2016-04-19 23:47:21;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-19 23:47:21', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":4};admin update topup_request
+2016-04-19 23:48:24;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-19 23:48:24', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":4};admin update topup_request
+2016-04-19 23:49:51;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2160000, `updated_at` = '2016-04-19 23:49:51', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2160000};admin update users
+2016-04-19 23:49:51;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-19 23:49:51', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-19 23:55:29;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,6,2,3,4,5', `updated_at` = '2016-04-19 23:55:29', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,6,2,3,4,5"};admin update user_access_group
+2016-04-19 23:55:35;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,6,2,3,4,5,9', `updated_at` = '2016-04-19 23:55:35', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,6,2,3,4,5,9"};admin update user_access_group
+2016-04-19 23:55:46;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9', `updated_at` = '2016-04-19 23:55:46', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9"};admin update user_access_group
+2016-04-19 23:55:52;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6', `updated_at` = '2016-04-19 23:55:52', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,10,11,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6"};admin update user_access_group
+2016-04-20 22:48:34;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2260000, `updated_at` = '2016-04-20 22:48:33', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2260000};admin update users
+2016-04-20 22:48:34;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-20 22:48:34', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":2};admin update topup_request
+2016-04-20 22:48:48;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2280000, `updated_at` = '2016-04-20 22:48:48', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2280000};admin update users
+2016-04-20 22:48:48;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-20 22:48:48', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":2};admin update topup_request
+2016-04-20 22:56:18;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-20 22:56:18', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":4};admin update topup_request
+2016-04-20 22:57:11;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 3, `updated_at` = '2016-04-20 22:57:11', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":3};admin update topup_request
+2016-04-20 22:57:22;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2380000, `updated_at` = '2016-04-20 22:57:22', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2380000};admin update users
+2016-04-20 22:57:22;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 2, `updated_at` = '2016-04-20 22:57:22', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":2};admin update topup_request
+2016-04-20 23:36:32;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6', `updated_at` = '2016-04-20 23:36:32', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6"};admin update user_access_group
+2016-04-20 23:36:50;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,11,10', `updated_at` = '2016-04-20 23:36:49', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,11,10"};admin update user_access_group
+2016-04-20 23:37:42;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6', `updated_at` = '2016-04-20 23:37:42', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6"};admin update user_access_group
+2016-04-20 23:43:25;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11', `updated_at` = '2016-04-20 23:43:25', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11"};admin update user_access_group
+2016-04-20 23:47:29;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6', `updated_at` = '2016-04-20 23:47:29', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6"};admin update user_access_group
+2016-04-20 23:47:41;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11', `updated_at` = '2016-04-20 23:47:41', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11"};admin update user_access_group
+2016-04-21 22:17:45;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2280000, `updated_at` = '2016-04-21 22:17:45', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2280000};admin update users
+2016-04-21 22:17:45;::1;1;1;withdraw_request;11;UPDATE `withdraw_request` SET `id_request_status` = 2, `updated_at` = '2016-04-21 22:17:45', `updated_by` = '1'
+WHERE `id` = '11';update;{"id_request_status":2};admin update withdraw_request
+2016-04-21 22:18:58;::1;1;1;withdraw_request;11;UPDATE `withdraw_request` SET `id_request_status` = 3, `updated_at` = '2016-04-21 22:18:58', `updated_by` = '1'
+WHERE `id` = '11';update;{"id_request_status":3};admin update withdraw_request
+2016-04-21 22:19:03;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2180000, `updated_at` = '2016-04-21 22:19:03', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2180000};admin update users
+2016-04-21 22:19:03;::1;1;1;withdraw_request;11;UPDATE `withdraw_request` SET `id_request_status` = 2, `updated_at` = '2016-04-21 22:19:03', `updated_by` = '1'
+WHERE `id` = '11';update;{"id_request_status":2};admin update withdraw_request
+2016-04-21 22:26:02;::1;1;1;withdraw_request;11;UPDATE `withdraw_request` SET `id_request_status` = 5, `approve_by` = '1', `approve_at` = '2016-04-21 22:26:02', `updated_at` = '2016-04-21 22:26:02', `updated_by` = '1'
+WHERE `id` = '11';update;{"id_request_status":5,"approve_by":"1","approve_at":"2016-04-21 22:26:02"};admin update withdraw_request
+2016-04-21 22:26:17;::1;1;1;withdraw_request;11;UPDATE `withdraw_request` SET `id_request_status` = 3, `updated_at` = '2016-04-21 22:26:17', `updated_by` = '1'
+WHERE `id` = '11';update;{"id_request_status":3};admin update withdraw_request
+2016-04-21 22:26:20;::1;1;1;users;2;UPDATE `users` SET `saldo` = 2080000, `updated_at` = '2016-04-21 22:26:20', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":2080000};admin update users
+2016-04-21 22:26:20;::1;1;1;withdraw_request;11;UPDATE `withdraw_request` SET `id_request_status` = 2, `updated_at` = '2016-04-21 22:26:20', `updated_by` = '1'
+WHERE `id` = '11';update;{"id_request_status":2};admin update withdraw_request
+2016-04-21 22:42:39;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11', `updated_at` = '2016-04-21 22:42:39', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,15,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11"};admin update user_access_group
+2016-04-21 22:42:54;::1;1;1;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = NULL, `email` = NULL, `user_access_group_id` = '2', `updated_at` = '2016-04-21 22:42:54', `updated_by` = '1'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":null,"email":null,"user_access_group_id":"2","user_id":"1"};admin update user
+2016-04-21 22:43:22;::1;1;1;user;1;UPDATE `user` SET `username` = 'admin', `full_name` = 'Admin', `mobile` = NULL, `email` = NULL, `user_access_group_id` = '1', `updated_at` = '2016-04-21 22:43:22', `updated_by` = '1'
+WHERE `id` = '1';update;{"username":"admin","full_name":"Admin","mobile":null,"email":null,"user_access_group_id":"1","user_id":"1"};admin update user
+2016-04-21 22:46:34;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `name` = 'Super  Administrator', `updated_at` = '2016-04-21 22:46:34', `updated_by` = '1'
+WHERE `id` = '1';update;{"name":"Super  Administrator","user_id":"1"};admin update user_access_group
+2016-04-21 22:46:49;::1;1;1;user_access_group;2;UPDATE `user_access_group` SET `name` = 'Manager', `updated_at` = '2016-04-21 22:46:49', `updated_by` = '1'
+WHERE `id` = '2';update;{"name":"Manager","user_id":"1"};admin update user_access_group
+2016-04-21 22:47:21;::1;1;1;user_access_group;3;UPDATE `user_access_group` SET `name` = 'Administrator', `updated_at` = '2016-04-21 22:47:21', `updated_by` = '1'
+WHERE `id` = '3';update;{"name":"Administrator","user_id":"1"};admin update user_access_group
+2016-04-21 22:47:38;::1;1;1;user;4;UPDATE `user` SET `username` = 'administor', `full_name` = 'driver', `mobile` = '12345', `email` = 'test@driver.com', `user_access_group_id` = '3', `updated_at` = '2016-04-21 22:47:38', `updated_by` = '1'
+WHERE `id` = '4';update;{"username":"administor","full_name":"driver","mobile":"12345","email":"test@driver.com","user_access_group_id":"3","user_id":"1"};admin update user
+2016-04-21 22:47:50;::1;1;1;user;4;UPDATE `user` SET `username` = 'administor', `full_name` = 'driver', `mobile` = '12345', `email` = 'test@driver.com', `user_access_group_id` = '3', `updated_at` = '2016-04-21 22:47:50', `updated_by` = '1'
+WHERE `id` = '4';update;{"username":"administor","full_name":"driver","mobile":"12345","email":"test@driver.com","user_access_group_id":"3","user_id":"1"};admin update user
+2016-04-21 22:48:11;::1;1;1;user;4;UPDATE `user` SET `password` = '04f37e6ac8898a19c80fcb52f46d2ab3', `updated_at` = '2016-04-21 22:48:11', `updated_by` = '1'
+WHERE `id` = '4';update;{"password":"04f37e6ac8898a19c80fcb52f46d2ab3"};admin update user
+2016-04-21 22:49:27;::1;1;1;user;2;UPDATE `user` SET `username` = 'Ilyas', `full_name` = 'ilyas raswandhi', `mobile` = '9283567', `email` = 'ilyas@gmail.com', `user_access_group_id` = '2', `updated_at` = '2016-04-21 22:49:27', `updated_by` = '1'
+WHERE `id` = '2';update;{"username":"Ilyas","full_name":"ilyas raswandhi","mobile":"9283567","email":"ilyas@gmail.com","user_access_group_id":"2","user_id":"1"};admin update user
+2016-04-21 22:51:00;::1;1;1;user;3;DELETE FROM `user`
+WHERE `id` = '3';restore;{"id":"3","username":"test1","password":"42b72f913c3201fc62660d512f5ac746","full_name":"test","mobile":"123","email":"test@test.com","user_access_group_id":"2","user_group_id":null,"company_id":"1","outlet_id":"1","created_at":"2015-11-02 23:13:27","created_by":null,"updated_at":null,"updated_by":null,"deleted_at":null,"deleted_by":null};admin restore user
+2016-04-22 00:13:55;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,12,13,14,17,18,19,20,1,16,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11', `updated_at` = '2016-04-22 00:13:55', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,12,13,14,17,18,19,20,1,16,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11"};admin update user_access_group
+2016-04-22 00:15:23;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '8,7,18,19,20,1,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11,12,13,14', `updated_at` = '2016-04-22 00:15:23', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"8,7,18,19,20,1,22,24,23,25,26,27,28,30,31,32,33,34,37,38,39,40,41,42,43,44,2,3,4,5,9,6,10,11,12,13,14"};admin update user_access_group
+2016-04-22 00:17:40;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = ',17,14,16,13,15,12,9,10,11,8,7,6,3,2,1,4,5', `updated_at` = '2016-04-22 00:17:40', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":",17,14,16,13,15,12,9,10,11,8,7,6,3,2,1,4,5"};admin update user_access_group
+2016-04-22 00:19:52;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = ',17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18', `updated_at` = '2016-04-22 00:19:52', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":",17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18"};admin update user_access_group
+2016-04-22 00:28:58;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-22 00:28:58', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":4};admin update topup_request
+2016-04-22 00:28:58;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-22 00:28:58', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":4};admin update topup_request
+2016-04-22 00:31:03;::1;1;1;topup_request;7;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-22 00:31:03', `updated_by` = '1'
+WHERE `id` = '7';update;{"id_request_status":4};admin update topup_request
+2016-04-22 00:31:03;::1;1;1;topup_request;8;UPDATE `topup_request` SET `id_request_status` = 4, `updated_at` = '2016-04-22 00:31:03', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_status":4};admin update topup_request
+2016-04-24 14:55:03;::1;1;1;forum_topics;5;UPDATE `forum_topics` SET `updated_at` = '2016-04-24 14:55:03', `updated_by` = '1'
+WHERE `id` = '5';update;{"admin_conculsion":"<p>asdsad<\/p>","user_id":"1"};admin update forum_topics
+2016-04-24 14:55:49;::1;1;1;forum_topics;5;UPDATE `forum_topics` SET `updated_at` = '2016-04-24 14:55:49', `updated_by` = '1'
+WHERE `id` = '5';update;{"admin_conculsion":"<p>sadsad<\/p>","user_id":"1"};admin update forum_topics
+2016-04-24 14:57:18;::1;1;1;forum_topics;2;UPDATE `forum_topics` SET `updated_at` = '2016-04-24 14:57:18', `updated_by` = '1'
+WHERE `id` = '2';update;{"admin_conculsion":"<p>sadsad asdsadsad<\/p>","user_id":"1"};admin update forum_topics
+2016-04-24 14:59:53;::1;1;1;forum_topics;2;UPDATE `forum_topics` SET `admin_conclusion` = '<h3>conclusion hahaah test 21312321</h3><p>sdsad sadsa</p>', `updated_at` = '2016-04-24 14:59:53', `updated_by` = '1'
+WHERE `id` = '2';update;{"admin_conclusion":"<h3>conclusion hahaah test 21312321<\/h3><p>sdsad sadsa<\/p>","user_id":"1"};admin update forum_topics
+2016-04-24 15:00:18;::1;1;1;forum_topics;4;UPDATE `forum_topics` SET `admin_conclusion` = '<h1>sad dsadsa</h1>', `updated_at` = '2016-04-24 15:00:18', `updated_by` = '1'
+WHERE `id` = '4';update;{"admin_conclusion":"<h1>sad dsadsa<\/h1>","user_id":"1"};admin update forum_topics
+2016-04-24 15:03:46;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = ',17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,22,21', `updated_at` = '2016-04-24 15:03:46', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":",17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,22,21"};admin update user_access_group
+2016-04-24 15:44:46;::1;1;1;users;3;UPDATE `users` SET `active` = 1, `updated_at` = '2016-04-24 15:44:46', `updated_by` = '1'
+WHERE `id` = '3';update;{"active":1};admin update users
+2016-04-24 15:44:47;::1;1;1;users;1;UPDATE `users` SET `active` = 0, `updated_at` = '2016-04-24 15:44:47', `updated_by` = '1'
+WHERE `id` = '1';update;{"active":0};admin update users
+2016-04-24 15:44:57;::1;1;1;users;3;UPDATE `users` SET `active` = 0, `updated_at` = '2016-04-24 15:44:57', `updated_by` = '1'
+WHERE `id` = '3';update;{"active":0};admin update users
+2016-04-24 15:45:03;::1;1;1;users;8;UPDATE `users` SET `active` = 0, `updated_at` = '2016-04-24 15:45:03', `updated_by` = '1'
+WHERE `id` = '8';update;{"active":0};admin update users
+2016-04-24 15:45:07;::1;1;1;users;8;UPDATE `users` SET `active` = 1, `updated_at` = '2016-04-24 15:45:07', `updated_by` = '1'
+WHERE `id` = '8';update;{"active":1};admin update users
+2016-04-24 15:45:11;::1;1;1;users;3;UPDATE `users` SET `active` = 1, `updated_at` = '2016-04-24 15:45:11', `updated_by` = '1'
+WHERE `id` = '3';update;{"active":1};admin update users
+2016-04-24 15:45:57;::1;1;1;users;1;UPDATE `users` SET `active` = 0, `updated_at` = '2016-04-24 15:45:57', `updated_by` = '1'
+WHERE `id` = '1';update;{"active":0};admin update users
+2016-04-24 15:46:11;::1;1;1;users;1;UPDATE `users` SET `active` = 1, `updated_at` = '2016-04-24 15:46:11', `updated_by` = '1'
+WHERE `id` = '1';update;{"active":1};admin update users
+2016-04-24 15:46:14;::1;1;1;users;8;UPDATE `users` SET `active` = 0, `updated_at` = '2016-04-24 15:46:14', `updated_by` = '1'
+WHERE `id` = '8';update;{"active":0};admin update users
+2016-04-24 16:17:50;::1;1;1;users;9;UPDATE `users` SET `active` = 0, `updated_at` = '2016-04-24 16:17:50', `updated_by` = '1'
+WHERE `id` = '9';update;{"active":0};admin update users
+2016-04-24 16:17:53;::1;1;1;users;9;UPDATE `users` SET `active` = 1, `updated_at` = '2016-04-24 16:17:53', `updated_by` = '1'
+WHERE `id` = '9';update;{"active":1};admin update users
+2016-04-27 12:54:03;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,28,27,24,21', `updated_at` = '2016-04-27 12:54:03', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,28,27,24,21"};admin update user_access_group
+2016-04-28 19:59:26;::1;1;1;master_bank;134;UPDATE `master_bank` SET `name` = 'Bank BCA Syariah', `updated_at` = '2016-04-28 19:59:26', `updated_by` = '1'
+WHERE `id` = '134';update;{"name":"Bank BCA Syariah","user_id":"1"};admin update master_bank
+2016-04-28 20:13:11;::1;1;1;price;6;UPDATE `price` SET `end` = '5000', `updated_at` = '2016-04-28 20:13:11', `updated_by` = '1'
+WHERE `id` = '6';update;{"end":"5000","user_id":"1"};admin update price
+2016-04-28 20:14:08;::1;1;1;price;6;UPDATE `price` SET `end` = '5000', `start` = '123', `updated_at` = '2016-04-28 20:14:08', `updated_by` = '1'
+WHERE `id` = '6';update;{"end":"5000","start":"123","user_id":"1"};admin update price
+2016-04-28 20:14:31;::1;1;1;price;6;UPDATE `price` SET `end` = '5000', `fee` = '123', `start` = '123', `updated_at` = '2016-04-28 20:14:31', `updated_by` = '1'
+WHERE `id` = '6';update;{"end":"5000","fee":"123","start":"123","user_id":"1"};admin update price
+2016-04-28 20:14:38;::1;1;1;price;6;DELETE FROM `price`
+WHERE `id` = '6';restore;{"id":"6","fee":"123","start":"123","end":"5000","created_at":"2016-04-28 20:12:56","created_by":"1","updated_at":"2016-04-28","updated_by":"1","deleted_at":null,"deleted_by":null};admin restore price
+2016-04-28 20:25:34;::1;1;1;request_type;4;UPDATE `request_type` SET `name_status` = 'Cancel 1', `updated_at` = '2016-04-28 20:25:34', `updated_by` = '1'
+WHERE `id` = '4';update;{"name_status":"Cancel 1","user_id":"1"};admin update request_type
+2016-04-28 20:25:38;::1;1;1;request_type;4;UPDATE `request_type` SET `name_status` = 'Cancel', `updated_at` = '2016-04-28 20:25:38', `updated_by` = '1'
+WHERE `id` = '4';update;{"name_status":"Cancel","user_id":"1"};admin update request_type
+2016-04-28 20:25:45;::1;1;1;request_type;7;UPDATE `request_type` SET `name_status` = 'Approve', `updated_at` = '2016-04-28 20:25:45', `updated_by` = '1'
+WHERE `id` = '7';update;{"name_status":"Approve","user_id":"1"};admin update request_type
+2016-04-28 20:29:09;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,28,27,24,21,29,30,31', `updated_at` = '2016-04-28 20:29:09', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,28,27,24,21,29,30,31"};admin update user_access_group
+2016-04-28 20:56:50;::1;1;1;users;2;UPDATE `users` SET `saldo` = 1280000, `updated_at` = '2016-04-28 20:56:50', `updated_by` = '1'
+WHERE `id` = '2';update;{"saldo":1280000};admin update users
+2016-04-28 20:56:50;::1;1;1;topup_request;4;UPDATE `topup_request` SET `id_request_type` = 2, `updated_at` = '2016-04-28 20:56:50', `updated_by` = '1'
+WHERE `id` = '4';update;{"id_request_type":2};admin update topup_request
+2016-04-28 20:59:35;::1;1;1;withdraw_request;10;UPDATE `withdraw_request` SET `id_request_type` = 7, `updated_at` = '2016-04-28 20:59:35', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":7,"approve_by":"1","approve_at":"2016-04-28 20:59:35"};admin update withdraw_request
+2016-04-28 20:59:41;::1;1;1;users;10;UPDATE `users` SET `saldo` = 0, `updated_at` = '2016-04-28 20:59:41', `updated_by` = '1'
+WHERE `id` = '10';update;{"saldo":0};admin update users
+2016-04-28 20:59:41;::1;1;1;withdraw_request;10;UPDATE `withdraw_request` SET `id_request_type` = 2, `updated_at` = '2016-04-28 20:59:41', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":2};admin update withdraw_request
+2016-04-28 21:00:35;::1;1;1;users;10;UPDATE `users` SET `saldo` = -68907655, `updated_at` = '2016-04-28 21:00:35', `updated_by` = '1'
+WHERE `id` = '10';update;{"saldo":-68907655};admin update users
+2016-04-28 21:00:35;::1;1;1;withdraw_request;10;UPDATE `withdraw_request` SET `id_request_type` = 2, `updated_at` = '2016-04-28 21:00:35', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":2};admin update withdraw_request
+2016-04-28 21:01:11;::1;1;1;users;10;UPDATE `users` SET `saldo` = -137815310, `updated_at` = '2016-04-28 21:01:11', `updated_by` = '1'
+WHERE `id` = '10';update;{"saldo":-137815310};admin update users
+2016-04-28 21:01:11;::1;1;1;withdraw_request;10;UPDATE `withdraw_request` SET `id_request_type` = 2, `updated_at` = '2016-04-28 21:01:11', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":2};admin update withdraw_request
+2016-04-28 21:02:14;::1;1;1;users;10;UPDATE `users` SET `saldo` = -206722965, `updated_at` = '2016-04-28 21:02:14', `updated_by` = '1'
+WHERE `id` = '10';update;{"saldo":-206722965};admin update users
+2016-04-28 21:02:14;::1;1;1;withdraw_request;10;UPDATE `withdraw_request` SET `id_request_type` = 2, `updated_at` = '2016-04-28 21:02:14', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":2};admin update withdraw_request
+2016-04-28 21:02:40;::1;1;1;withdraw_request;9;UPDATE `withdraw_request` SET `id_request_type` = 7, `updated_at` = '2016-04-28 21:02:40', `updated_by` = '1'
+WHERE `id` = '9';update;{"id_request_type":7,"approve_by":"1","approve_at":"2016-04-28 21:02:40"};admin update withdraw_request
+2016-04-28 21:02:43;::1;1;1;users;10;UPDATE `users` SET `saldo` = -216599530, `updated_at` = '2016-04-28 21:02:43', `updated_by` = '1'
+WHERE `id` = '10';update;{"saldo":-216599530};admin update users
+2016-04-28 21:02:43;::1;1;1;withdraw_request;9;UPDATE `withdraw_request` SET `id_request_type` = 2, `updated_at` = '2016-04-28 21:02:43', `updated_by` = '1'
+WHERE `id` = '9';update;{"id_request_type":2};admin update withdraw_request
+2016-04-28 21:03:13;::1;1;1;payment_confirmation;9;UPDATE `payment_confirmation` SET `id_request_type` = 7, `user_id` = '1', `updated_at` = '2016-04-28 21:03:13', `updated_by` = '1'
+WHERE `id` = '9';update;{"id_request_type":7,"user_id":"1","approve_by":"1","approve_at":"2016-04-28 21:03:13"};admin update payment_confirmation
+2016-04-28 21:03:24;::1;1;1;payment_confirmation;9;UPDATE `payment_confirmation` SET `id_request_type` = 2, `updated_at` = '2016-04-28 21:03:24', `updated_by` = '1'
+WHERE `id` = '9';update;{"id_request_type":2};admin update payment_confirmation
+2016-04-28 21:04:08;::1;1;1;payment_confirmation;10;UPDATE `payment_confirmation` SET `id_request_type` = 7, `user_id` = '1', `updated_at` = '2016-04-28 21:04:08', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":7,"user_id":"1","approve_by":"1","approve_at":"2016-04-28 21:04:08"};admin update payment_confirmation
+2016-04-28 21:04:14;::1;1;1;payment_confirmation;10;UPDATE `payment_confirmation` SET `id_request_type` = 2, `updated_at` = '2016-04-28 21:04:14', `updated_by` = '1'
+WHERE `id` = '10';update;{"id_request_type":2};admin update payment_confirmation
+2016-04-28 21:04:14;::1;1;1;users;1;UPDATE `users` SET `saldo` = -1000000, `updated_at` = '2016-04-28 21:04:14', `updated_by` = '1'
+WHERE `id` = '1';update;{"saldo":-1000000};admin update users
+2016-04-28 21:09:38;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,27,24,21,29,30,31', `updated_at` = '2016-04-28 21:09:38', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,27,24,21,29,30,31"};admin update user_access_group
+2016-04-28 21:11:43;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,27,24,21,29,30,31,28', `updated_at` = '2016-04-28 21:11:42', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,27,24,21,29,30,31,28"};admin update user_access_group
+2016-04-28 21:12:04;::1;1;1;payment_confirmation;8;UPDATE `payment_confirmation` SET `id_request_type` = 7, `user_id` = '4', `updated_at` = '2016-04-28 21:12:04', `updated_by` = '1'
+WHERE `id` = '8';update;{"id_request_type":7,"user_id":"4","approve_by":"1","approve_at":"2016-04-28 21:12:04"};admin update payment_confirmation
+2016-04-28 23:01:54;::1;1;1;user_access_group;1;UPDATE `user_access_group` SET `access_right` = '17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,28,27,24,21,29,30,31', `updated_at` = '2016-04-28 23:01:54', `updated_by` = '1'
+WHERE `id` = '1';update;{"access_right":"17,14,16,13,15,12,9,10,8,7,6,3,2,1,4,5,11,20,19,18,23,26,22,25,28,27,24,21,29,30,31"};admin update user_access_group

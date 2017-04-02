@@ -1,0 +1,101 @@
+<div class="modal-header">
+    <h3 class="modal-title">Detail Payment</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" role="form" id="form" name="myForm">
+	
+		<div class="form-body">
+
+			<div class="form-group ">
+			  	<table width="100%" class="table">
+			      <thead>
+			      <tr >
+			        <th class="info" colspan="2">Member Send</th>
+			        <th colspan="2">Member Recieve</th>
+			      </tr>
+			      </thead>
+			      <tbody>
+			      	<tr >
+				        <td class="ng-binding info">Username</td>
+				        <td class="ng-binding info">:{{data.send_username}}</td>
+				        <td class="ng-binding">Username</td>
+				        <td class="ng-binding">:{{data.recieve_username}}</td>
+				    </tr>
+			      	<tr >
+				        <td class="ng-binding info">Full Name</td>
+				        <td class="ng-binding info">:{{data.send_full_name}}</td>
+				        <td class="ng-binding">Full Name</td>
+				        <td class="ng-binding">:{{data.recieve_full_name}}</td>
+				    </tr>
+			      	<tr >
+				        <td class="ng-binding info">Amount Send</td>
+				        <td class="ng-binding info">:{{data.send_saldo | currency:" ":0}}</td>
+				        <td class="ng-binding">Amount Recieve</td>
+				        <td class="ng-binding">:{{data.recieve_saldo | currency:" ":0}}</td>
+				    </tr>
+			      	<tr>
+				        <td class="ng-binding info">Last Login</td>
+				        <td class="ng-binding info">:{{data.send_last_login}}</td>
+				        <td class="ng-binding">Last Login</td>
+				        <td class="ng-binding">:{{data.recieve_last_login}}</td>
+				    </tr>
+			      	<tr>
+				        <td class="ng-binding info">IP</td>
+				        <td class="ng-binding info">:{{data.send_ip}}</td>
+				        <td class="ng-binding">IP</td>
+				        <td class="ng-binding">:{{data.receive_ip}}</td>
+				    </tr>
+				    <tr class="grey">
+				    	<td colspan="4"></td>
+				    </tr>
+				    <tr >
+				    	<td>No.: {{data.no_payment}}</td>
+                        <td ng-if="data.st!=undefined && data.st !=null">
+                            Amount:<a  tooltip="{{data.st}}" style="color:blue"> {{data.amount}}</a>
+                        </td>
+                        <td ng-if="data.st==undefined || data.st ==null">Amount: {{data.amount}}</td>
+				    	<td >Fee: {{data.fee | currency:" ":0}}</td>
+				    	<td >Total: {{data.received_amount | currency:" ":0}}</td>
+				    </tr>
+			      	<tr ng-if="data.path_receipt != null ">
+				        <td class="ng-binding" colspan="2">Receipt</td>
+				        <td class="ng-binding" colspan="2">:
+                            <a href="{{data.path_receipt}}" target="_blank" class="btn  btn-info btn-xs" >Download</a>
+                        </td>
+				    </tr>
+			      	<tr>
+				        <td class="ng-binding" colspan="2">Transaction Type</td>
+				        <td class="ng-binding" colspan="2">:{{data.payment_type}}</td>
+				    </tr>
+			      	<tr ng-if="data.approve_by != null ">
+				        <td class="ng-binding" colspan="2">Admin Approve</td>
+				        <td class="ng-binding" colspan="2">:{{data.admin}}</td>
+				    </tr>
+			      	<tr>
+				        <td class="ng-binding" colspan="2">Status</td>
+				        <td class="ng-binding" colspan="2">:{{data.status}}</td>
+				    </tr>
+			      	<tr ng-if="data.bank_from != null ">
+				        <td class="ng-binding" colspan="2">Bank From</td>
+				        <td class="ng-binding" colspan="2">:{{data.bank_from}}</td>
+				    </tr>
+			      	<tr ng-show="data.payment_type == 'Transfer' ">
+				        <td class="ng-binding" colspan="2">Bank Destination</td>
+				        <td class="ng-binding" colspan="2">:{{data.bank_destination}}</td>
+				    </tr>
+			      	<tr ng-show="data.payment_type == 'Transfer' ">
+				        <td class="ng-binding" colspan="2">Payment Date</td>
+				        <td class="ng-binding" colspan="2">:{{data.payment_date}}</td>
+				    </tr>
+
+			      </tbody>
+			    </table>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+    <!--button class="btn green" ng-click="ok()" >Submit</button-->
+    <button class="btn btn-warning" ng-click="cancel()" >Close</button>
+</div>

@@ -1,0 +1,90 @@
+<div class="box">
+	
+	<div class="p p-h-md">
+
+		<a data-dismiss="modal" class="pull-right text-muted-lt text-2x m-t-n inline p-sm" ng-click="close_chat()">&times;</a>
+
+		<strong>{{username}}</strong>
+
+	</div>
+
+	<div class="box-row bg-light lt">
+
+		<div class="box-cell">
+
+			<div class="box-inner">
+
+				<div class="p-md">
+
+					<div class="m-b" ng-repeat="item in messages">
+						
+						<span ng-if="user_id != item.user_id">
+						
+							<!--<a href class="pull-left w-40 m-r-sm"><img src="assets/images/a2.jpg" alt="..." class="w-full img-circle"></a>-->
+
+							<div class="clear">
+
+								<div class="p p-v-sm bg-warning inline r">
+								
+									{{item.message}}
+
+								</div>
+
+								<div class="text-muted-lt text-xs m-t-xs"><i class="fa fa-ok text-success"></i> </div>
+							
+							</div>
+						
+						</span>
+						
+						<span ng-if="user_id == item.user_id">
+						
+							<!--<a href class="pull-right w-40 m-l-sm"><img src="assets/images/a3.jpg" class="w-full img-circle" alt="..."></a>-->
+
+							<div class="clear text-right">
+				
+								<div class="p p-v-sm bg-info inline text-left r">
+
+									{{item.message}}
+
+								</div>
+
+								<div class="text-muted-lt text-xs m-t-xs"></div>
+							
+							</div>
+
+						</span>
+						
+					</div>
+
+					
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="p-h-md p-v">
+		
+		<!--<a class="pull-left w-32 m-r"><img src="assets/images/a3.jpg" class="w-full img-circle" alt="..."></a>-->
+
+		<form>
+
+		<div class="input-group">
+
+				<input type="text" class="form-control" placeholder="Say something" ng-model="$parent.message" ng-keypress="send_message($event)">
+				<!--
+				<span class="input-group-btn">
+
+					<button class="btn btn-default" type="button" ng-click="send_message()">SEND</button>
+
+				</span>
+				-->
+			</div>
+
+		</form>
+
+	</div>
+	
+</div>

@@ -1,0 +1,23 @@
+  
+  <div class="panel panel-default">
+    <div class="panel-heading" translate="load.page.[[SYSTEM_SETTINGS]]">
+    </div>
+    <div class="panel-body b-b b-light">
+      <form class="form-horizontal" role="form" id="form">
+        <div class="form-body">
+          <div class="form-group">
+            <label class="col-md-3 control-label" translate="load.page.[[PAYMENT_DATE]]"></label>/MONTH
+            <div class="col-md-6">
+              <input type="number" placeholder="date" ng-model="data.payment_date_month" class="form-control" reuired min="1" max="30">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label" >&nbsp;</label>
+            <div class="col-md-6">
+              <button class="btn btn-primary" ng-click="ok()" popover="Save" popover-trigger="mouseenter" translate="load.page.[[OK]]"></button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

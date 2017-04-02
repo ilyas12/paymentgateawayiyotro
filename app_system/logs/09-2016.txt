@@ -1,0 +1,70 @@
+2016-09-08 18:25:32;::1;0;0;user;1;UPDATE `user` SET `is_login` = 0, `updated_at` = '2016-09-08 18:25:32', `updated_by` = 0
+WHERE `id` = '1';update;{"is_login":0};guest update user
+2016-09-08 18:25:39;::1;0;0;user;1;UPDATE `user` SET `is_login` = 0, `updated_at` = '2016-09-08 18:25:39', `updated_by` = 0
+WHERE `id` = '1';update;{"is_login":0};guest update user
+2016-09-08 18:25:39;::1;0;0;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473333939, `updated_at` = '2016-09-08 18:25:39', `updated_by` = 0
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473333939};guest update user
+2016-09-08 18:25:43;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473333942, `updated_at` = '2016-09-08 18:25:42', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473333942};admin update user
+2016-09-08 18:25:49;::1;1;1;user;1;UPDATE `user` SET `is_login` = 0, `last_active` = 1473333949, `updated_at` = '2016-09-08 18:25:49', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":0,"last_active":1473333949};admin update user
+2016-09-08 18:25:49;::1;0;0;user;;UPDATE `user` SET `is_login` = 0, `last_active` = 1473333949, `updated_at` = '2016-09-08 18:25:49', `updated_by` = 0
+WHERE `id` IS NULL;update;{"is_login":0,"last_active":1473333949};guest update user
+2016-09-08 18:52:50;::1;0;0;user;1;UPDATE `user` SET `is_login` = 0, `updated_at` = '2016-09-08 18:52:50', `updated_by` = 0
+WHERE `id` = '1';update;{"is_login":0};guest update user
+2016-09-08 18:52:50;::1;0;0;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473335570, `updated_at` = '2016-09-08 18:52:50', `updated_by` = 0
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473335570};guest update user
+2016-09-08 18:52:53;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473335573, `updated_at` = '2016-09-08 18:52:53', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473335573};admin update user
+2016-09-08 18:52:58;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473335578, `updated_at` = '2016-09-08 18:52:58', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473335578};admin update user
+2016-09-08 18:53:10;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473335590, `updated_at` = '2016-09-08 18:53:10', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473335590};admin update user
+2016-09-08 19:08:46;::1;1;1;user;1;UPDATE `user` SET `is_login` = 0, `last_active` = 1473336526, `updated_at` = '2016-09-08 19:08:46', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":0,"last_active":1473336526};admin update user
+2016-09-08 19:09:26;::1;0;0;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336566, `updated_at` = '2016-09-08 19:09:26', `updated_by` = 0
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336566};guest update user
+2016-09-08 19:09:27;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336567, `updated_at` = '2016-09-08 19:09:27', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336567};admin update user
+2016-09-08 19:09:45;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336585, `updated_at` = '2016-09-08 19:09:45', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336585};admin update user
+2016-09-08 19:12:02;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336722, `updated_at` = '2016-09-08 19:12:02', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336722};admin update user
+2016-09-08 19:12:27;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336747, `updated_at` = '2016-09-08 19:12:27', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336747};admin update user
+2016-09-08 19:12:39;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336758, `updated_at` = '2016-09-08 19:12:39', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336758};admin update user
+2016-09-08 19:12:48;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473336767, `updated_at` = '2016-09-08 19:12:48', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473336767};admin update user
+2016-09-08 19:18:29;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473337109, `updated_at` = '2016-09-08 19:18:29', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473337109};admin update user
+2016-09-08 19:21:09;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473337269, `updated_at` = '2016-09-08 19:21:09', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473337269};admin update user
+2016-09-08 19:26:43;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473337603, `updated_at` = '2016-09-08 19:26:43', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473337603};admin update user
+2016-09-08 19:27:19;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473337639, `updated_at` = '2016-09-08 19:27:19', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473337639};admin update user
+2016-09-08 19:28:25;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473337705, `updated_at` = '2016-09-08 19:28:25', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473337705};admin update user
+2016-09-08 19:30:15;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473337814, `updated_at` = '2016-09-08 19:30:14', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473337814};admin update user
+2016-09-08 19:33:53;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338033, `updated_at` = '2016-09-08 19:33:53', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338033};admin update user
+2016-09-08 19:35:51;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338151, `updated_at` = '2016-09-08 19:35:51', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338151};admin update user
+2016-09-08 19:37:02;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338222, `updated_at` = '2016-09-08 19:37:02', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338222};admin update user
+2016-09-08 19:38:19;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338299, `updated_at` = '2016-09-08 19:38:19', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338299};admin update user
+2016-09-08 19:39:09;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338348, `updated_at` = '2016-09-08 19:39:08', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338348};admin update user
+2016-09-08 19:40:38;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338438, `updated_at` = '2016-09-08 19:40:38', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338438};admin update user
+2016-09-08 19:45:55;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338755, `updated_at` = '2016-09-08 19:45:55', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338755};admin update user
+2016-09-08 19:46:02;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338762, `updated_at` = '2016-09-08 19:46:02', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338762};admin update user
+2016-09-08 19:47:15;::1;1;1;user;1;UPDATE `user` SET `is_login` = 1, `last_active` = 1473338835, `updated_at` = '2016-09-08 19:47:15', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":1,"last_active":1473338835};admin update user
+2016-09-08 20:03:58;::1;1;1;user;1;UPDATE `user` SET `is_login` = 0, `last_active` = 1473339838, `updated_at` = '2016-09-08 20:03:58', `updated_by` = '1'
+WHERE `id` = '1';update;{"is_login":0,"last_active":1473339838};admin update user

@@ -1,0 +1,115 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;">{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+
+      <div class="col-sm-6" ng-if="plot_pie.length > 0">
+        <div class="panel panel-card p m-b-sm">
+          <h5 class="no-margin m-b">Trnsaction On Going</h5>
+          <div class="text-center">
+              <div ui-jp="plot" ui-options="
+                {{plot_pie}},
+                {
+                  series: { pie: { show: true, innerRadius: 0.4, stroke: { width: 3 }, label: { show: true, threshold: 0.05 } } },
+                  colors: ['{{app.color.info}}','{{app.color.warning}}','{{app.color.success}}','{{app.color.accent}}'],
+                  grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#ccc' },   
+                  tooltip: true,
+                  tooltipOpts: { content: '%s: %p.0%' }
+                }
+              " style="height:460px;"></div>
+          </div>
+          <div class="m-t-xs">
+            <div class="font-bold">{{data.total}}</div>
+            <!--small class="text-muted">
+                  <select class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+            </small-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="panel panel-card blue">
+          <div class="p">
+            Payment On Going
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2 font-bold">{{data.payment | currency:" ":0}}</div>
+          </div>
+        </div>
+        <div class="panel panel-card yellow">
+          <div class="p">
+            Top Up On Going
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2  font-bold">{{data.topup_request | currency:" ":0}}</div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-card blue">
+          <div class="p">
+            Payment Today
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2 font-bold">{{data.payment_today }}</div>
+          </div>
+        </div>
+        <div class="panel panel-card yellow">
+          <div class="p">
+            Top Up Today
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2  font-bold">{{data.topup_request_today }}</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-3">
+        
+        <div class="panel panel-card green">
+          <div class="p">
+            Withdraw On Going
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2 font-bold">{{data.withdraw | currency:" ":0}}</div>
+          </div>
+        </div>
+        <div class="panel panel-card purple">
+          <div class="p">
+            Forum On Going
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2  font-bold">{{data.forum }}</div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-card green">
+          <div class="p">
+            Withdraw Today
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2 font-bold">{{data.withdraw_today }}</div>
+          </div>
+        </div>
+        <div class="panel panel-card purple">
+          <div class="p">
+            Forum Today
+          </div>
+          <div class="panel-body text-center">
+            <div class="h2 font-bold">{{data.forum_today }}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

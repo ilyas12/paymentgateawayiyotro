@@ -1,0 +1,110 @@
+<div class="row">
+  
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;" >{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-body">
+              <ul class="breadcrumb">
+                  <li><a ui-sref="app.dashboard">Dashboard</a></li>
+                  <li><a ui-sref="app.forum_on_going">Forum</a></li>
+                  <li class="active">{{description}}</li>
+              </ul>
+              <div class="table-responsive">
+
+					<p class="m-b btn-groups pull-right" ng-show="data.forum_stat == null || data.forum_stat == 0 || data.forum_stat == 8 ">
+				        <button md-ink-ripple="" class="btn btn-fw btn-warning"  ng-click="close_data(data.id)">Close</button>
+				    </p>		      	
+
+				    <div class="panel-card bg-white p clearfix m-b-sm b-l b-l-2x r" >
+				      <a  class="pull-left m-r">
+				      	No. : {{data.code}}
+				      </a>      
+				    </div>
+				    <div class="panel-card bg-white p clearfix m-b-sm b-l b-l-2x r" >
+				      <a  class="pull-left m-r">
+				      	Status : 
+                          <span class="label m-t-xs orange label-xs" ng-show="data.forum_stat ==null || data.forum_stat ==0 || data.forum_stat ==8  ">OPEN</span>
+                          <span class="label m-t-xs blue label-xs" ng-show="data.forum_stat !=null && data.forum_stat != 0 && data.forum_stat !=8 ">CLOSE</span>
+				      </a>      
+				    </div>
+				    <div class="panel-card bg-white p clearfix m-b-sm b-l b-l-2x r" ng-show="data.admin_conclusion != null">
+				      <a  class="pull-left m-r">
+				      	Admin Conclusion:
+				      </a>
+				      <div class="clear">
+				        <div compile="data.admin_conclusion"><span class="label bg-light m-l-sm"></span></div>
+				      </div>      
+				    </div>
+              </div>
+          </div>
+        </div>
+
+		<!-- list -->
+		<div class="m-b-lg">
+
+		  <div class="panel-card bg-white p clearfix m-b-sm b-l b-l-2x r b-l-primary">
+		    <a ui-sref="app.page.profile" class="pull-left m-r">
+		    	<span class="font-bold" style="">{{data.member}}</span><br>
+		    	<span class="text-muted text-xs" >Member</span>
+		    </a>
+		    <div class="pull-right text-sm text-muted">
+		      <span class="hidden-xs">{{ data.created_date | dateInMillis | date: ' H:mm d/MM/yyyy' }}</span>
+		    </div>
+		    <hr>
+		    <div class="clear">
+		      <div class=" font-bold "><h2 style="margin-top: 0px;">{{data.topic}}</h2></div>
+		      <div class="" compile="data.topic_detail"></div>
+		    </div>      
+		  </div>
+		  <div ng-repeat="item in data.detail "  class="panel-card bg-white p clearfix m-b-sm b-l b-l-2x r b-l-info">
+		    <a class="pull-left m-r" >
+		    	<span class="font-bold" style="">{{item.admin}}</span>
+		    	<span class="font-bold" style="">{{item.member}}</span><br>
+		    	<span class="text-muted text-xs" >{{item.type}}</span>
+		    </a>
+		    <div class="pull-right text-sm text-muted">
+		      <span class="hidden-xs">{{ item.created_at | dateInMillis | date: ' H:mm d/MM/yyyy' }}</span>
+		    </div>
+		    <hr>
+		    <div class="clear">
+		    	<div class="" compile="item.reply_content"></div>
+		    </div>      
+		  </div>
+		  
+		</div>
+		<!-- / list -->
+		<p class="m-b btn-groups" ng-show="data.forum_stat != '9'">
+	        <button md-ink-ripple=""  class="btn btn-fw btn-primary" ng-show="admin_conclusion==0 || admin_conclusion == 2 " ng-click="adminConclusionAdd(1)">Add Conclusion</button>
+	        <button md-ink-ripple="" class="btn btn-fw btn-success" ng-show="admin_conclusion==0 || admin_conclusion == 1 " ng-click="adminConclusionAdd(2)">Reply</button>
+	        <button md-ink-ripple="" class="btn btn-fw btn-default" ng-show="admin_conclusion==1  || admin_conclusion == 2" ng-click="adminConclusionCancel()">Cancel</button>
+	    </p>		      	
+
+		  <div class="p" ng-show="admin_conclusion!=0">
+		    <form name="newMail" class="form-horizontal m-t">
+
+		      <div class="form-group" ng-class="{ 'has-error' : showAlert }">
+		        <label class="col-sm-2 control-label"  ng-show="admin_conclusion==1 ">Admin Conclusion</label>
+		        <label class="col-sm-2 control-label" ng-show="admin_conclusion==2 ">Reply</label>
+		        <div class="col-sm-10">
+		          <div text-angular ng-model="data.admin_conclusion_text" class="btn-groups"></div>
+		          <p ng-show="showAlert" class="help-block">field is required.</p>
+		        </div>
+		      </div>
+		      <div class="form-group">
+		        <div class="col-lg-8 col-lg-offset-2">
+		          <button class="btn btn-info w-xs" ng-click="formSubmit()" type="button">Submit</button>
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+
+      </div>
+    
+    </div>
+  </div>
+</div>
+

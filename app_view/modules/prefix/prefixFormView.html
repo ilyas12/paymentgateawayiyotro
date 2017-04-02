@@ -1,0 +1,43 @@
+
+<div class="modal-header">
+    <h3 class="modal-title">Prefix</h3>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" role="form" id="form">
+		<div class="form-body">
+
+			<div class="form-group">
+				<label class="col-md-3 control-label" >Prefix</label>
+				<div class="col-md-6">
+					<input type="text" ng-model="data.prefix" class="form-control" />
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-3 control-label">Running Number</label>
+				<div class="col-md-6">
+					<input type="text" placeholder="Running Number" ng-model="data.running_number" class="form-control" readonly=""/>
+				</div>
+			</div>
+            
+            <div class="form-group">
+				<label class="col-md-3 control-label" >Length</label>
+				<div class="col-md-6">
+					<input type="text" ng-model="data.length" class="form-control" />
+				</div>
+			</div>
+            
+            <div class="form-group">
+				<label class="col-md-3 control-label" >Description</label>
+				<div class="col-md-6">
+					<input type="text" ng-model="data.description" class="form-control" readonly="" />
+				</div>
+			</div>
+
+		</div
+	</div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Close</button>
+</div>

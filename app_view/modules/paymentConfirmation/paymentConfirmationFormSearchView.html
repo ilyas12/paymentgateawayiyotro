@@ -1,0 +1,185 @@
+<div class="row">
+  
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;" >{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-body">
+              <ul class="breadcrumb">
+                  <li><a ui-sref="app.dashboard">Dashboard</a></li>
+                  <li class="active">{{description}}</li>
+              </ul>
+              
+              <div class="table-responsive">
+
+                <form class="form-inline">
+                  <div class="form-body">
+                    <div class="form-group ">
+                      Search :  
+                    </div>
+                    <div class="form-group ">
+                      <input id="filter" type="text" class="form-control " ng-model="search_payment_confirmation" placeholder="Text"  my-enter="search_payment()"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-default" ng-click="search_payment()">Search</button>
+                  </div>
+                </form>
+
+                <table class="table table-border table-striped m-b-none" ng-show="search_view">
+
+                  <thead>
+                    <tr>
+                        <th align="center">#
+                        </th>
+                        <th>Date
+                        </th>
+                        <th>Member Send
+                        </th>
+                        <th>Member Recieve
+                        </th>
+                        <th >Type
+                        </th>
+                        <!--th >Bank Transfer
+                        </th>
+                        <th >Bank Destination
+                        </th-->
+                        <th >Amount
+                        </th>
+                        <th >Admin
+                        </th>
+                        <th >Status
+                        </th>
+                        <th >Action
+                        </th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <tr ng-repeat-start="item in datas " >
+                        <td>
+                          <i class="fa fa-flag" ng-if="item.ip_buyer == item.ip_seller"></i>
+                          <a ng-if="item.detail" ng-show="item.row_child == false"  style="color:blue" ng-click="item.row_child=true" >+ {{item.no_payment}}</a>
+                          <a ng-if="item.detail" ng-show="item.row_child" style="color:blue" ng-click="item.row_child=false" >- {{item.no_payment}}</a>
+
+                          <span ng-if="item.detail == undefined">{{item.no_payment}}</span>
+
+                        </td>
+                        <td>{{item.created_at | date:'MM/dd/yyyy' }}</td>
+                        <td>{{item.member_send}}</td>
+                        <td>{{item.member_recieve}}</td>
+                        <td>{{item.payment_type}}</td>
+                        <!--td>{{item.bank_transfer}}</td>
+                        <td>{{item.bank_destination}}</td-->
+                        <td ng-if="item.st!=undefined && item.st !=null">
+                            <a tooltip="{{item.st}}" style="color:blue">{{item.amount}}</a>
+                        </td>
+                        <td ng-if="item.st==undefined || item.st ==null">{{item.amount}}</td>
+                        <td>{{item.admin}}</td>
+                        <td>
+                          <span class="label m-t-xs orange label-xs" ng-show="item.id_request_type =='1' ">INCOMPLATE</span>
+                          <span class="label m-t-xs blue label-xs" ng-show="item.id_request_type =='2' ">COMPLATE</span>
+                          <span class="label m-t-xs green label-xs" ng-show="item.id_request_type =='3' ">PENDING</span>
+                          <span class="label m-t-xs red label-xs" ng-show="item.id_request_type =='4' ">CANCEL</span>
+                          <span class="label m-t-xs yellow label-xs" ng-show="item.id_request_type =='5' ">HOLD</span>
+                          <span class="label m-t-xs white label-xs" ng-show="item.id_request_type =='6' ">WAITING</span>
+                          <span class="label m-t-xs purple label-xs" ng-show="item.id_request_type =='7' ">APPROVE</span>
+
+                        </td>
+                        <td>
+                          <button access="32" ng-show="item.id_request_type != '2' && item.id_request_type != '1'  && item.id_request_type != '4' " class="btn btn-xs cyan-100" type="button" ng-click="escalation_data('{{item.id}}')" tooltip="escalation"><i class="fa fa-level-up"></i></button>
+                          <button ng-show="item.id_request_type =='3' " class="btn btn-xs" type="button" ng-click="approve_data('{{item.id}}')" tooltip="approve"  access="28"><i class="fa fa-check"></i></button>
+                          <button ng-show="(item.id_request_type =='7' || item.id_request_type =='5') && item.approve_by == user_id " class="btn btn-info btn-xs" type="button" ng-click="complate_data('{{item.id}}')" tooltip="complate" ><i class="fa fa-check"></i></button>
+                          <button ng-show="item.id_request_type =='7' && item.approve_by == user_id  " class="btn red btn-xs" type="button" ng-click="hold_data('{{item.id}}')"  tooltip="hold"  ><i class="fa  fa-lock"></i></button>
+                          <button class="btn btn-xs green" type="button" ng-click="detail_data('{{item.id}}')"  tooltip="Detail"><i class="fa fa-eye"></i></button>
+                          <button access="33" class="btn yellow btn-xs" type="button" ng-click="cancel_data('{{item.id}}')"  tooltip="cancel"  ><i class="fa  fa-trash"></i></button>
+
+                          <button  ng-show=" item.payment_type =='Saldo' && (item.id_request_type !='2' && item.id_request_type !='4') " class="btn btn-xs btn-primary" type="button" ng-click="edit_fee('{{item.id}}')"  tooltip="edit fee"><i class="fa fa-pencil"></i></button>
+                          <!--button ng-show="item.id_request_type !='1' &&  item.id_request_type !='2' && item.id_request_type !='4'   "  class="btn btn-xs cyan-100" type="button" ng-click="approve_to_data('{{item.id}}')" tooltip="approve to" access="32"><i class="fa fa-check"></i></button-->
+                        </td>
+                    </tr>
+                    <tr ng-if="item.detail && item.row_child == true " ng-repeat-end="" >
+                        <td colspan="9">
+                          <table class="" width="100%" border="1" >
+                            <thead>
+                              <tr>
+                                  <th align="center">#
+                                  </th>
+                                  <th>Date
+                                  </th>
+                                  <th>Member Send
+                                  </th>
+                                  <th>Member Recieve
+                                  </th>
+                                  <th >Type
+                                  </th>
+                                  <!--th >Bank Transfer
+                                  </th>
+                                  <th >Bank Destination
+                                  </th-->
+                                  <th >Amount
+                                  </th>
+                                  <th >Admin
+                                  </th>
+                                  <th >Status
+                                  </th>
+                                  <th >Action
+                                  </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr ng-repeat="detail in item.detail " >
+                                  <td><i class="fa fa-flag" ng-if="item.ip_buyer == item.ip_seller"></i>{{detail.no_payment}}</td>
+                                  <td>{{detail.created_at | date:'MM/dd/yyyy' }}</td>
+                                  <td>{{detail.member_send}}</td>
+                                  <td>{{detail.member_recieve}}</td>
+                                  <td>{{detail.payment_type}}</td>
+                                  <td ng-if="detail.st!=undefined && detail.st !=null">
+                                      <a tooltip="{{detail.st}}" style="color:blue">{{detail.amount}}</a>
+                                  </td>
+                                  <td ng-if="detail.st==undefined || detail.st ==null">{{detail.amount}}</td>
+                                  <td>{{detail.admin}}</td>
+                                  <td>
+                                    <span class="label m-t-xs orange label-xs" ng-show="detail.id_request_type =='1' ">INCOMPLATE</span>
+                                    <span class="label m-t-xs blue label-xs" ng-show="detail.id_request_type =='2' ">COMPLATE</span>
+                                    <span class="label m-t-xs green label-xs" ng-show="detail.id_request_type =='3' ">PENDING</span>
+                                    <span class="label m-t-xs red label-xs" ng-show="detail.id_request_type =='4' ">CANCEL</span>
+                                    <span class="label m-t-xs yellow label-xs" ng-show="detail.id_request_type =='5' ">HOLD</span>
+                                    <span class="label m-t-xs white label-xs" ng-show="detail.id_request_type =='6' ">WAITING</span>
+                                    <span class="label m-t-xs purple label-xs" ng-show="detail.id_request_type =='7' ">APPROVE</span>
+                                  </td>
+                                  <td>
+                                    <button access="32" ng-show="detail.id_request_type != '2' && detail.id_request_type != '1'  && detail.id_request_type != '4' " class="btn btn-xs cyan-100" type="button" ng-click="escalation_data('{{detail.id}}')" tooltip="escalation"><i class="fa fa-level-up"></i></button>
+                                    <button ng-show="detail.id_request_type =='3' " class="btn btn-xs" type="button" ng-click="approve_data('{{detail.id}}')" tooltip="approve"  access="28"><i class="fa fa-check"></i></button>
+                                    <button ng-show="(detail.id_request_type =='7' || detail.id_request_type =='5') && detail.approve_by == user_id " class="btn btn-info btn-xs" type="button" ng-click="complate_data('{{detail.id}}')" tooltip="complate" ><i class="fa fa-check"></i></button>
+                                    <button ng-show="detail.id_request_type =='7' && detail.approve_by == user_id  " class="btn red btn-xs" type="button" ng-click="hold_data('{{detail.id}}')"  tooltip="hold"  ><i class="fa  fa-lock"></i></button>
+                                    <button class="btn btn-xs green" type="button" ng-click="detail_data('{{detail.id}}')"  tooltip="Detail"><i class="fa fa-eye"></i></button>
+                                    <button access="33" class="btn yellow btn-xs" type="button" ng-click="cancel_data('{{detail.id}}')"  tooltip="cancel"  ><i class="fa  fa-trash"></i></button>
+
+                                    <button  ng-show=" detail.payment_type =='Saldo' && (detail.id_request_type !='2' && detail.id_request_type !='4') " class="btn btn-xs btn-primary" type="button" ng-click="edit_fee('{{detail.id}}')"  tooltip="edit fee"><i class="fa fa-pencil"></i></button>
+                                  </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+
+                        </td>
+                    </tr>
+                  </tbody>
+                  
+                </table>
+
+
+              </div>
+            
+        
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+<div class="row">
+  
+  <div class="col-lg-12">
+    <h2 style="margin-top: 0px;" >{{description}}</h2>
+  </div>
+  <div class="col-lg-12">
+    <div class="row ">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-body">
+              <ul class="breadcrumb">
+                  <li><a ui-sref="app.dashboard">Dashboard</a></li>
+                  <li class="active">{{description}}</li>
+              </ul>
+              
+              <div class="table-responsive">
+
+                <form class="form-inline">
+                  <div class="form-body">
+                    <div class="form-group pull-right">
+                      <span >Search</span> : <input id="filter" type="text" class="form-control input-sm w-auto inline m-r" ng-model="search_text" placeholder="Search.." ng-model-options="{debounce: 750}" ng-change="search_data()"/>
+                    </div>
+                  </div>
+                </form>
+                <table class="table table-border table-striped m-b-none" >
+                  <thead>
+                    <tr>
+                        <th >#
+                        </th>
+                        <th>Date
+                        </th>
+                        <th>Member
+                        </th>
+                        <th >Bank
+                        </th>
+                        <th >Amount
+                        </th>
+                        <th >Status
+                        </th>
+                        <th >Action
+                        </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="item in datas ">
+                        <td>{{item.code}}</td>
+                        <td>{{item.created_at | date:'MM/dd/yyyy' }}</td>
+                        <td>{{item.member}}</td>
+                        <td>{{item.bank}}</td>
+                        <td align='right'>{{item.Amount | currency:" ":0}}</td>
+                        <td>
+
+                          <span class="label m-t-xs orange label-xs" ng-show="item.id_request_type =='1' ">INCOMPLATE</span>
+                          <span class="label m-t-xs blue label-xs" ng-show="item.id_request_type =='2' ">COMPLATE</span>
+                          <span class="label m-t-xs green label-xs" ng-show="item.id_request_type =='3' ">PENDING</span>
+                          <span class="label m-t-xs red label-xs" ng-show="item.id_request_type =='4' ">CANCEL</span>
+                          <span class="label m-t-xs yellow label-xs" ng-show="item.id_request_type =='5' ">HOLD</span>
+                          <span class="label m-t-xs white label-xs" ng-show="item.id_request_type =='6' ">WAITING</span>
+                          <span class="label m-t-xs purple label-xs" ng-show="item.id_request_type =='7' ">APPROVE</span>
+                            
+
+                        </td>
+                        <td>
+                          <button ng-show="item.id_request_type =='3'  " class="btn btn-xs " type="button" ng-click="approve_data('{{item.id}}')" tooltip="approve" access="15"><i class="fa fa-check"></i></button>
+                          <button ng-show="item.id_request_type =='5' || item.id_request_type =='7' " class="btn btn-info btn-xs" type="button" ng-click="complate_data('{{item.id}}')" tooltip="complate" access="16"><i class="fa fa-check"></i></button>
+                          <button ng-show="item.id_request_type =='7' " class="btn red btn-xs" type="button" ng-click="hold_data('{{item.id}}')"  tooltip="hold" access="17"><i class="fa fa-lock"></i></button>
+                          <!--button ng-show="item.receipt !='' && item.receipt !=null "  class="btn btn-xs" type="button" ng-click="download_data('{{item.id}}')"  tooltip="Download Receipt"><i class="fa fa-download"></i></button-->
+                        </td>
+                    </tr>
+                    
+                  </tbody>
+                  <tfoot >
+                    <tr>
+                        <td colspan="5" class="text-center">
+                              <paging
+                                    class="large"
+                                    page="1"
+                                    page-size="paging.page_size"
+                                    total="paging.total"
+                                    text-first="&laquo;"
+                                    text-last="&raquo;"
+                                    text-next="&rsaquo;"
+                                    text-prev="&lsaquo;"
+                                    text-title-page="Page Page hover title text"
+                                    text-title-first="First Page hover title text"
+                                    text-title-last="Last Page hover title text"
+                                    text-title-next="Next Page hover title text"
+                                    text-title-prev="Previous hover Page title text"
+                                    adjacent="2"
+                                    dots="..."
+                                    scroll-top="true"
+                                    hide-if-empty="true"
+                                    ul-class="pagination"
+                                    active-class="active"
+                                    disabled-class="disabled"
+                                    show-prev-next="true"
+                                    paging-action="DoCtrlPagingAct('Paging Clicked', page, pageSize, total)">
+                                </paging>
+                        </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            
+        
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+  </div>
+</div>
+
