@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><?php echo isset($company['name'])?$company['name']:"Arzap"; ?></title>
-    <meta name="description" content="aRZap CRM" />
+    <title><?php echo isset($company['name'])?$company['name']:"Iyotro"; ?></title>
+    <meta name="description" content="Iyotro" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="<?php echo base_url("angular/assets/libs/assets/animate.css/animate.css")?>" type="text/css" media='screen,print'/>
     <link rel="stylesheet" href="<?php echo base_url("angular/assets/libs/assets/font-awesome/css/font-awesome.css")?>" type="text/css" media='screen,print'/>
